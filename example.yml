@@ -1,0 +1,19 @@
+template-id: example
+name: Example Template
+description: A simple webhook template
+logo-url: https://upload.wikimedia.org/wikipedia/commons/3/30/Vector-based_example.svg
+info-url: https://www.example.com
+documentation-url: https://www.iana.org/domains/reserved
+fields:
+  - id: region
+    name: Server region
+    description: On which region should the service endpoint land on
+    secret: false
+    default-value: eu
+format: json
+headers:
+  Authorization: Bearer xyz
+create-downlink-api-key: true
+base-url: https://www.example.com{/region}
+paths:
+  uplink-message: /uplink
