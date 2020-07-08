@@ -14,8 +14,8 @@ otherwise we will not be able to process this bug report.
 ...
 
 #### Environment
-
-
+- **Webhook template:** enter
+- **Network Server version:** enter
 
 #### Steps to Reproduce
 <!-- How can we reproduce the problem? -->

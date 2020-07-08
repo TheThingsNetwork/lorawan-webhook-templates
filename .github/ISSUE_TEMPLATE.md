@@ -9,7 +9,8 @@ otherwise we will not be able to process this issue.
 ...
 
 #### Environment
-
+- **Webhook template:** enter
+- **Network Server version:** enter
 
 #### Steps to Reproduce
 <!-- How can we reproduce the problem? How should the feature work? -->
