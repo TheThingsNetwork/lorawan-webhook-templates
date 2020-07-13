@@ -5,12 +5,12 @@ logo-url: https://iot.cdnedge.bluemix.net/ustatic/img/logo_blue.png
 info-url: https://ubidots.com/
 documentation-url: https://help.ubidots.com/en/articles/3975015-integrate-your-the-things-industries-data-with-ubidots-using-ubifunctions/
 fields:
-  - id: ubidots-username
+  - id: username
     name: Ubidots username
     description: 
     secret: false
     default-value: 
-  - id: ubifunction-name
+  - id: function
     name: UbiFunction name
     description: Use lowercase letters and dashes (remember that the function name gets normalized from `Function Name` to `function-name` in Ubidots)
     secret: false
@@ -21,4 +21,4 @@ headers:
 create-downlink-api-key: false
 base-url: https://parse.ubidots.com
 paths:
-  uplink-message: /prv{/ubidots-username}{/ubifunction-name}
+  uplink-message: /prv{/username}{/function}

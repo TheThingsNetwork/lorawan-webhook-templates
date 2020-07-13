@@ -18,16 +18,6 @@ otherwise we will not be able to process it.
 
 ...
 
-#### What is already there? What do you see now?
-<!-- Are you able to make an integration with a custom Webhook template? -->
-
-...
-
-#### What is missing? What do you want to see?
-<!-- Are there any parameters with a common value? -->
-
-...
-
 #### Environment
 <!-- Please tell us more about your environment and integration setup. -->
 

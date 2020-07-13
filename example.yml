@@ -10,9 +10,14 @@ fields:
     description: On which region should the service endpoint land on
     secret: false
     default-value: eu
+  - id: api-key
+    name: API Key
+    description: API key used for authorization
+    secret: false
+    default-value:
 format: json
 headers:
-  Authorization: Bearer xyz
+  Authorization: Bearer {api-key}
 create-downlink-api-key: true
 base-url: https://www.example.com{/region}
 paths:
