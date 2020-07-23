@@ -1,0 +1,19 @@
+template-id: datacake
+name: Datacake
+description: Send data to Datacake via TTI adapter
+logo-url: https://res-5.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/dtm6zx3orzlzdcb1biro
+info-url: https://datacake.co/
+documentation-url: https://docs.datacake.de/
+fields:
+  - id: token
+    name: Token
+    description: Datacake API Token
+    secret: true
+    default-value: 
+format: json
+headers:
+  Authorization: Token {token}
+create-downlink-api-key: false
+base-url: https://api.datacake.co/integrations/lorawan/tti
+paths:
+  uplink-message: /
