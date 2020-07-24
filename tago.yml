@@ -18,4 +18,3 @@ create-downlink-api-key: false
 base-url: https://api.tago.io/data
 paths:
   uplink-message: /
-  
