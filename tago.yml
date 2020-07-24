@@ -1,0 +1,21 @@
+template-id: tagoio
+name: TagoIO
+description: Integrate with TagoIO
+logo-url: https://partners.sigfox.com/assets/logo-for/5acccca69bffaf0001201a45
+info-url: https://tago.io/
+documentation-url: https://docs.tago.io/
+fields:
+  - id: token
+    name: Device Token
+    description: TagoIO device token
+    secret: true
+    default-value: 
+format: json
+headers:
+  Device-Token: "{token}"
+  Content-Type: application/json
+create-downlink-api-key: false
+base-url: https://api.tago.io/data
+paths:
+  uplink-message: /
+  
