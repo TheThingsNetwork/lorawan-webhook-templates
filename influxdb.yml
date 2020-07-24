@@ -1,0 +1,19 @@
+template-id: influxdbcloud
+name: InfluxDB Cloud 2.0
+description: Use HTTP webhook with Telegraf agent to connect to InfluxDB Cloud 2.0
+logo-url: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Influxdb_logo.svg/1200px-Influxdb_logo.svg.png
+info-url: https://www.influxdata.com/
+documentation-url: https://v2.docs.influxdata.com/v2.0/
+fields:
+  - id: path
+    name: URL path
+    description: Path which Telegraf agent is listening to
+    secret: false
+    default-value: 
+format: json
+headers: {}
+create-downlink-api-key: false
+base-url: http://localhost:8080{/path}
+paths: 
+  uplink-message: ""
+ 
