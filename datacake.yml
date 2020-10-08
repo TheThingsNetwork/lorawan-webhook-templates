@@ -1,7 +1,7 @@
 template-id: datacake
 name: Datacake
 description: Send data to Datacake via TTI adapter
-logo-url: https://res-5.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/dtm6zx3orzlzdcb1biro
+logo-url: datacake.png
 info-url: https://datacake.co/
 documentation-url: https://docs.datacake.de/
 fields:

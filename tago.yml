@@ -1,7 +1,7 @@
 template-id: tagoio
 name: TagoIO
 description: Integrate with TagoIO
-logo-url: https://partners.sigfox.com/assets/logo-for/5acccca69bffaf0001201a45
+logo-url: tago.png
 info-url: https://tago.io/
 documentation-url: https://community.tago.io/t/how-to-integrate-tagoio-with-ttn-v3/374
 fields:

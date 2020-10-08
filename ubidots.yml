@@ -1,7 +1,7 @@
 template-id: ubidots
 name: Ubidots 
 description: Integrate with Ubidots over UbiFunctions
-logo-url: https://iot.cdnedge.bluemix.net/ustatic/img/logo_blue.png
+logo-url: ubidots.png
 info-url: https://ubidots.com/
 documentation-url: https://help.ubidots.com/en/articles/3975015-integrate-your-the-things-industries-data-with-ubidots-using-ubifunctions/
 fields:
