@@ -1,0 +1,26 @@
+template-id: thingspeak
+name: ThingSpeak 
+description: Send data to ThingSpeak channel
+logo-url: https://brands.home-assistant.io/_/thingspeak/logo.png
+info-url: https://thingspeak.com/
+documentation-url: https://www.mathworks.com/help/thingspeak/index.html
+fields:
+  - id: channelid
+    name: Channel ID
+    description: ThingSpeak Channel ID
+    secret: false
+    default-value: 
+  - id: apikey
+    name: API Key
+    description: ThingSpeak Write API Key
+    secret: false
+    default-value: 
+format: json
+headers:
+  Content-Type: application/json
+  Authorization: "{apikey}"
+  ChannelId: "{channelid}"
+create-downlink-api-key: false
+base-url: http://api.thingspeak.com/things_network/v3/update
+paths:
+  uplink-message: /
