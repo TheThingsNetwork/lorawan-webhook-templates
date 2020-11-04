@@ -13,7 +13,7 @@ fields:
   - id: apikey
     name: API Key
     description: ThingSpeak Write API Key
-    secret: false
+    secret: true
     default-value: 
 format: json
 headers:
@@ -21,6 +21,6 @@ headers:
   Authorization: "{apikey}"
   ChannelId: "{channelid}"
 create-downlink-api-key: false
-base-url: http://api.thingspeak.com/things_network/v3/update
+base-url: https://api.thingspeak.com/things_network/v3/update
 paths:
   uplink-message: /
