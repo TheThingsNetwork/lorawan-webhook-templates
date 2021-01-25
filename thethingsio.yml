@@ -10,9 +10,9 @@ fields:
     description: thethings.iO Product ID
     secret: false
     default-value: 
-  - id: callbackID
-    name: Callback ID
-    description: Callback ID can be found in thethings.iO Callback URL. For example, if the Callback URL is "https://subscription.thethings.io/lora/foo/bar?idname={DevEUI}", the Callback ID is "bar".
+  - id: hash
+    name: Hash
+    description: Hash can be found as a part of thethings.iO Callback URL. For example, if the Callback URL is "https://subscription.thethings.io/lora/foo/bar?idname={DevEUI}", the product's hash is "bar".
     secret: false
     default-value: 
 format: json
