@@ -1,0 +1,25 @@
+template-id: qubitro
+name: Qubitro 
+description: Send your data to Qubitro
+logo-url: https://cdn.qubitro.com/landing/qubitro_nav_logo.png
+info-url: https://www.qubitro.com/
+documentation-url: https://docs.qubitro.com/
+fields:
+  - id: project-id
+    name: Project ID
+    description: Qubitro Project ID
+    secret: true
+    default-value: 
+  - id: webhook-signing-key
+    name: Webhook Signing Key
+    description: Qubitro Webhook Signing Key
+    secret: true
+    default-value: 
+format: json
+headers:
+  projectId: "{project-id}"
+  webhookSigningKey: "{webhook-signing-key}"
+create-downlink-api-key: false
+base-url: https://webhook.qubitro.com/integrations/ttn
+paths:
+  uplink-message: ""
