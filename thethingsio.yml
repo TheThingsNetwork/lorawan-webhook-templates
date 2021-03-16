@@ -18,6 +18,6 @@ fields:
 format: json
 headers: {}
 create-downlink-api-key: false
-base-url: https://subscription.thethings.io/lora/{productID}/{callbackID}?idname=end_device_ids.dev_eui
+base-url: https://subscription.thethings.io/lora/{productID}/{hash}?idname=end_device_ids.dev_eui
 paths:
   uplink-message: ""
