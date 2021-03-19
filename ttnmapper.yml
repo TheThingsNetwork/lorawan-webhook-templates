@@ -1,6 +1,6 @@
 template-id: ttnmapper
 name: TTN Mapper
-description: Contribute data for coverage and signal analysis.
+description: Contribute data for coverage and signal analysis
 logo-url: https://ttnmapper.org/resources/TTNMapper.svg
 info-url: https://ttnmapper.org
 documentation-url: https://ttnmapper.org/docs/tts/v3/
