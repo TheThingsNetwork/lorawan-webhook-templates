@@ -1,0 +1,26 @@
+template-id: ttnmapper
+name: TTN Mapper
+description: Contribute data for coverage and signal analysis
+logo-url: https://ttnmapper.org/resources/TTNMapper.svg
+info-url: https://ttnmapper.org
+documentation-url: https://docs.ttnmapper.org/
+fields:
+  - id: email
+    name: E-mail address
+    description: You need to provide a valid e-mail address for your data to be accepted by TTN Mapper.
+    secret: false
+  # - id: experiment
+  #   name: Experiment Name (optional)
+  #   description: If you are testing (new device, balloon flights, etc) and do not want your data to appear on the main map, please specify an experiment name.
+  #   secret: false
+  #   default-value: test
+format: json
+headers:
+  TTNMAPPERORG-USER: "{email}"
+  # TTNMAPPERORG-EXPERIMENT: "{experiment}"
+create-downlink-api-key: true
+base-url: https://ttnmapper.org/integrations/tts/v3
+paths:
+  uplink-message: /uplink-message
+  join-accept: /join-accept
+  location-solved: /location-solved
