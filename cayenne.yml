@@ -1,0 +1,19 @@
+template-id: cayenne
+name: Cayenne
+description: Drag-and-Drop IoT Project Builder
+logo-url: https://res.cloudinary.com/dctlrnwuz/image/upload/v1619483016/mydevices/cayenne-logo-mydevices.png
+info-url: https://developers.mydevices.com
+documentation-url: https://developers.mydevices.com/cayenne/docs
+fields:
+  - id: cliend-id
+    name: Client ID
+    description: Optional Cayenne Client ID
+    secret: false
+    optional: true
+format: json
+headers:
+  Authorization: Bearer {cliend-id}
+create-downlink-api-key: true
+base-url: https://lora.mydevices.com/v1/networks/ttn
+paths:
+  uplink-message: /uplink
