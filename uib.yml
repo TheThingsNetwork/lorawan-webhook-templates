@@ -15,6 +15,11 @@ fields:
     description: Template Name
     secret: false
     default-value: 
+  - id: template_variables
+    name: Template Variables
+    description: Template variables should be added as comma separated and in the order as they appear in the template message.
+    secret: false
+    default-value: 
   - id: template_id
     name: Template Namespace
     description: Template Namespace
@@ -27,11 +32,13 @@ fields:
     default-value: 
 format: json
 headers:
-  application_key: "{application_key}"
-  receiver_phonenumber: "{phone_number}"
-  template_namespace: "{template_id}"
+  x-application-key: "{application_key}"
+  x-receiver-phonenumber: "{phone_number}"
+  x-template-namespace: "{template_id}"
+  x-template-name: "{template_name}"
+  x-template-variables: "{template_variables}"
   Content-type: application/json
 create-downlink-api-key: false
 base-url: https://thingsindustries-v2connector.unificationengine.com
 paths:
-  uplink-message: /notification{?template_name}
+  uplink-message: /notification
