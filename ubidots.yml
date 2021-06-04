@@ -1,24 +1,25 @@
-template-id: ubidots
-name: Ubidots 
-description: Integrate with Ubidots over UbiFunctions
-logo-url: https://iot.cdnedge.bluemix.net/ustatic/img/logo_blue.png
+template-id: ubidots-plugin
+name: Ubidots
+description: Integrate with Ubidots using Plugins
+logo-url: https://res.cloudinary.com/di2vaxvhl/image/upload/v1622207170/Ubidots%20logos/logo-ubi-png.png
 info-url: https://ubidots.com/
-documentation-url: https://help.ubidots.com/en/articles/3975015-integrate-your-the-things-industries-data-with-ubidots-using-ubifunctions/
+documentation-url: https://help.ubidots.com/en/articles/5096476-plugins-connect-the-things-stack-to-ubidots
 fields:
-  - id: username
-    name: Ubidots username
-    description: 
+  - id: plugin_id
+    name: Plugin ID
+    description: Unique identifier found in your Plugin's HTTPS URL
     secret: false
     default-value: 
-  - id: function
-    name: UbiFunction name
-    description: Use lowercase letters and dashes (remember that the function name gets normalized from `Function Name` to `function-name` in Ubidots)
-    secret: false
-    default-value: 
+  - id: ubidots-token
+    name: Ubidots token
+    description: Token used to authenticate Ubidots API requests 
+    secret: true
+    default-value:
 format: json
 headers:
   Content-type: application/json
+  X-Auth-Token: {ubidots-token}
 create-downlink-api-key: false
-base-url: https://parse.ubidots.com
+base-url: https://dataplugin.ubidots.com
 paths:
-  uplink-message: /prv{/username}{/function}
+  uplink-message: "/api/web-hook/{plugin_id}"
