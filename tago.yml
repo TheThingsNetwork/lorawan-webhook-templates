@@ -9,7 +9,6 @@ fields:
     name: Authorization
     description: TagoIO Authorization
     secret: true
-    default-value: 
 format: json
 headers:
   Authorization: "{auth}"

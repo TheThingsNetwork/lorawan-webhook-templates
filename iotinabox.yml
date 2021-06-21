@@ -12,7 +12,7 @@ fields:
     optional: true
 format: json
 headers:
-  x-subscription-key: '{x-subscription-key}'
+  x-subscription-key: "{x-subscription-key}"
 create-downlink-api-key: true
 base-url: https://hub.m2c.io/v1/networks/iotinabox.ttnv3
 paths:

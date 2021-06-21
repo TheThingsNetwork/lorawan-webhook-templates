@@ -1,5 +1,5 @@
 template-id: thingspeak
-name: ThingSpeak 
+name: ThingSpeak
 description: Send data to ThingSpeak channel
 logo-url: https://brands.home-assistant.io/_/thingspeak/logo.png
 info-url: https://thingspeak.com/
@@ -9,12 +9,10 @@ fields:
     name: Channel ID
     description: ThingSpeak Channel ID
     secret: false
-    default-value: 
   - id: apikey
     name: API Key
     description: ThingSpeak Write API Key
     secret: true
-    default-value: 
 format: json
 headers:
   Content-Type: application/json

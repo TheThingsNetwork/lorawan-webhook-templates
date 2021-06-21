@@ -9,10 +9,10 @@ fields:
     name: Plugin ID
     description: Unique identifier found in your Plugin's HTTPS URL
     secret: false
-    default-value: 
+    default-value:
   - id: ubidots-token
     name: Ubidots token
-    description: Token used to authenticate Ubidots API requests 
+    description: Token used to authenticate Ubidots API requests
     secret: true
     default-value:
 format: json

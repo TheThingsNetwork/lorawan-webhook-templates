@@ -9,7 +9,6 @@ fields:
     name: Token
     description: Datacake API Token
     secret: true
-    default-value: 
 format: json
 headers:
   Authorization: Token {token}
