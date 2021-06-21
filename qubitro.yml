@@ -1,5 +1,5 @@
 template-id: qubitro
-name: Qubitro 
+name: Qubitro
 description: Send your data to Qubitro
 logo-url: https://cdn.qubitro.com/landing/qubitro_nav_logo.png
 info-url: https://www.qubitro.com/
@@ -9,12 +9,10 @@ fields:
     name: Project ID
     description: Qubitro Project ID
     secret: true
-    default-value: 
   - id: webhook-signing-key
     name: Webhook Signing Key
     description: Qubitro Webhook Signing Key
     secret: true
-    default-value: 
 format: json
 headers:
   projectId: "{project-id}"

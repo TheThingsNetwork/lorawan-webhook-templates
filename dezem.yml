@@ -9,7 +9,6 @@ fields:
     name: deZemAd API key
     description: The same API key as provided in deZemAd
     secret: false
-    default-value:
 format: json
 headers:
   X-deZem-Secret: "{api-key}"

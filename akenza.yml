@@ -9,14 +9,11 @@ fields:
     name: Domain Secret
     description: Akenza Core domain secret
     secret: false
-    default-value: 
   - id: device-id
     name: Device ID
     description: Akenza Core device ID
     secret: false
-    default-value: 
 format: json
-headers: {}
 create-downlink-api-key: false
 base-url: https://data-gateway.core.akenza.io/v2/up/{domain-secret}?id={device-id}
 paths:
