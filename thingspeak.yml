@@ -5,18 +5,18 @@ logo-url: https://brands.home-assistant.io/_/thingspeak/logo.png
 info-url: https://thingspeak.com/
 documentation-url: https://www.mathworks.com/help/thingspeak/index.html
 fields:
-- id: channelid
+- id: channel_id
   name: Channel ID
   description: ThingSpeak Channel ID
-- id: apikey
+- id: api_key
   name: API Key
   description: ThingSpeak Write API Key
   secret: true
 format: json
 headers:
   Content-Type: application/json
-  Authorization: '{apikey}'
-  ChannelId: '{channelid}'
+  Authorization: '{api_key}'
+  ChannelId: '{channel_id}'
 create-downlink-api-key: false
 base-url: https://api.thingspeak.com/things_network/v3/update
 paths:

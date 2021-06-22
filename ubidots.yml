@@ -8,14 +8,14 @@ fields:
 - id: plugin_id
   name: Plugin ID
   description: Unique identifier found in your Plugin's HTTPS URL
-- id: ubidots-token
+- id: ubidots_token
   name: Ubidots token
   description: Token used to authenticate Ubidots API requests
   secret: true
 format: json
 headers:
   Content-type: application/json
-  X-Auth-Token: '{ubidots-token}'
+  X-Auth-Token: '{ubidots_token}'
 create-downlink-api-key: false
 base-url: https://dataplugin.ubidots.com
 paths:

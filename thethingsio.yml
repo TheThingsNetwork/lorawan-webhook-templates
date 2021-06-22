@@ -5,7 +5,7 @@ logo-url: https://thethings.io/wp-content/uploads/2017/03/Logo-2.jpg
 info-url: https://thethings.io/
 documentation-url: https://developers.thethings.io/
 fields:
-- id: productID
+- id: product_id
   name: Product ID
   description: thethings.iO Product ID
 - id: hash
@@ -15,6 +15,6 @@ fields:
     the product's hash is "bar".
 format: json
 create-downlink-api-key: false
-base-url: https://subscription.thethings.io/lora/{productID}/{hash}?idname=end_device_ids.dev_eui
+base-url: https://subscription.thethings.io/lora/{product_id}/{hash}?idname=end_device_ids.dev_eui
 paths:
   uplink-message: ""
