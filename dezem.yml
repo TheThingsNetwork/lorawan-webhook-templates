@@ -5,13 +5,12 @@ logo-url: https://www.dezem.de/typo3conf/ext/dezem/Resources/Public/Images/logo-
 info-url: https://www.dezem.de
 documentation-url: https://www.dezem.de/datenerfassung/lorawan/
 fields:
-  - id: api-key
-    name: deZemAd API key
-    description: The same API key as provided in deZemAd
-    secret: false
+- id: api-key
+  name: deZemAd API key
+  description: The same API key as provided in deZemAd
 format: json
 headers:
-  X-deZem-Secret: "{api-key}"
+  X-deZem-Secret: '{api-key}'
 create-downlink-api-key: false
 base-url: https://m2m.dezem.de/services/import/lorawan/data-1.php
 paths:

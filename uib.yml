@@ -5,33 +5,30 @@ logo-url: https://uib.ai/assets/images/uib.png
 info-url: https://uib.ai/
 documentation-url: https://uib.ai/
 fields:
-  - id: phone_number
-    name: Receiver Phone Number(s)
-    description: Phone numbers to which template messages are to be sent.(Add multiple phone numbers separated by comma).
-    secret: false
-  - id: template_name
-    name: Template Name
-    description: Template Name
-    secret: false
-  - id: template_variables
-    name: Template Variables
-    description: Template variables should be added as comma separated and in the order as they appear in the template message.
-    secret: false
-  - id: template_id
-    name: Template Namespace
-    description: Template Namespace
-    secret: false
-  - id: application_key
-    name: Application Key
-    description: Application Key
-    secret: false
+- id: phone_number
+  name: Receiver Phone Number(s)
+  description: Phone numbers to which template messages are to be sent.(Add multiple
+    phone numbers separated by comma).
+- id: template_name
+  name: Template Name
+  description: Template Name
+- id: template_variables
+  name: Template Variables
+  description: Template variables should be added as comma separated and in the order
+    as they appear in the template message.
+- id: template_id
+  name: Template Namespace
+  description: Template Namespace
+- id: application_key
+  name: Application Key
+  description: Application Key
 format: json
 headers:
-  x-application-key: "{application_key}"
-  x-receiver-phonenumber: "{phone_number}"
-  x-template-namespace: "{template_id}"
-  x-template-name: "{template_name}"
-  x-template-variables: "{template_variables}"
+  x-application-key: '{application_key}'
+  x-receiver-phonenumber: '{phone_number}'
+  x-template-namespace: '{template_id}'
+  x-template-name: '{template_name}'
+  x-template-variables: '{template_variables}'
   Content-type: application/json
 create-downlink-api-key: false
 base-url: https://thingsindustries-v2connector.unificationengine.com

@@ -5,14 +5,14 @@ logo-url: https://thethings.io/wp-content/uploads/2017/03/Logo-2.jpg
 info-url: https://thethings.io/
 documentation-url: https://developers.thethings.io/
 fields:
-  - id: productID
-    name: Product ID
-    description: thethings.iO Product ID
-    secret: false
-  - id: hash
-    name: Hash
-    description: Hash can be found as a part of thethings.iO Callback URL. For example, if the Callback URL is "https://subscription.thethings.io/lora/foo/bar?idname={DevEUI}", the product's hash is "bar".
-    secret: false
+- id: productID
+  name: Product ID
+  description: thethings.iO Product ID
+- id: hash
+  name: Hash
+  description: Hash can be found as a part of thethings.iO Callback URL. For example,
+    if the Callback URL is "https://subscription.thethings.io/lora/foo/bar?idname={DevEUI}",
+    the product's hash is "bar".
 format: json
 create-downlink-api-key: false
 base-url: https://subscription.thethings.io/lora/{productID}/{hash}?idname=end_device_ids.dev_eui

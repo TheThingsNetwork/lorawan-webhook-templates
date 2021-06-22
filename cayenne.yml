@@ -5,11 +5,10 @@ logo-url: https://res.cloudinary.com/dctlrnwuz/image/upload/v1619483016/mydevice
 info-url: https://developers.mydevices.com
 documentation-url: https://developers.mydevices.com/cayenne/docs
 fields:
-  - id: cliend-id
-    name: Client ID
-    description: Optional Cayenne Client ID
-    secret: false
-    optional: true
+- id: cliend-id
+  name: Client ID
+  description: Optional Cayenne Client ID
+  optional: true
 format: json
 headers:
   Authorization: Bearer {cliend-id}

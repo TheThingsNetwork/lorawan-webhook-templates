@@ -5,21 +5,18 @@ logo-url: https://res.cloudinary.com/di2vaxvhl/image/upload/v1622207170/Ubidots%
 info-url: https://ubidots.com/
 documentation-url: https://help.ubidots.com/en/articles/5096476-plugins-connect-the-things-stack-to-ubidots
 fields:
-  - id: plugin_id
-    name: Plugin ID
-    description: Unique identifier found in your Plugin's HTTPS URL
-    secret: false
-    default-value:
-  - id: ubidots-token
-    name: Ubidots token
-    description: Token used to authenticate Ubidots API requests
-    secret: true
-    default-value:
+- id: plugin_id
+  name: Plugin ID
+  description: Unique identifier found in your Plugin's HTTPS URL
+- id: ubidots-token
+  name: Ubidots token
+  description: Token used to authenticate Ubidots API requests
+  secret: true
 format: json
 headers:
   Content-type: application/json
-  X-Auth-Token: "{ubidots-token}"
+  X-Auth-Token: '{ubidots-token}'
 create-downlink-api-key: false
 base-url: https://dataplugin.ubidots.com
 paths:
-  uplink-message: "/api/web-hook/{plugin_id}"
+  uplink-message: /api/web-hook/{plugin_id}

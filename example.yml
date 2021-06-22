@@ -5,15 +5,13 @@ logo-url: https://upload.wikimedia.org/wikipedia/commons/3/30/Vector-based_examp
 info-url: https://www.example.com
 documentation-url: https://www.iana.org/domains/reserved
 fields:
-  - id: region
-    name: Server region
-    description: On which region should the service endpoint land on
-    secret: false
-    default-value: eu
-  - id: api-key
-    name: API Key
-    description: API key used for authorization
-    secret: false
+- id: region
+  name: Server region
+  description: On which region should the service endpoint land on
+  default-value: eu
+- id: api-key
+  name: API Key
+  description: API key used for authorization
 format: json
 headers:
   Authorization: Bearer {api-key}

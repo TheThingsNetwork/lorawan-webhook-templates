@@ -5,10 +5,10 @@ logo-url: https://res-5.cloudinary.com/crunchbase-production/image/upload/c_lpad
 info-url: https://datacake.co/
 documentation-url: https://docs.datacake.de/
 fields:
-  - id: token
-    name: Token
-    description: Datacake API Token
-    secret: true
+- id: token
+  name: Token
+  description: Datacake API Token
+  secret: true
 format: json
 headers:
   Authorization: Token {token}
