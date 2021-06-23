@@ -5,12 +5,12 @@ logo-url: https://static.cloud.studio/images/ttn/logos/cloud-studio-logo.png
 info-url: https://www.cloud.studio/
 documentation-url: https://wiki.cloud.studio/page/174
 fields:
-  - id: server-instance
+  - id: server_instance
     name: Server instance
     description: Server instance hosting your IoT platform
     secret: false
     default-value: gear.cloud.studio
-  - id: access-token
+  - id: access_token
     name: Access token
     description: Access Token used to authenticate API requests
     secret: false
@@ -18,8 +18,8 @@ fields:
 format: json
 headers:
   Content-type: application/json
-  Authorization: Bearer {access-token}
+  Authorization: Bearer {access_token}
 create-downlink-api-key: false
-base-url: https://{server-instance}/Services/Interfaces/TTNInterfaceService.svc
+base-url: https://{server_instance}/Services/Interfaces/TTNInterfaceService.svc
 paths:
   uplink-message: /UplinkV3

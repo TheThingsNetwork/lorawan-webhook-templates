@@ -5,18 +5,18 @@ logo-url: https://cdn.qubitro.com/landing/qubitro_nav_logo.png
 info-url: https://www.qubitro.com/
 documentation-url: https://docs.qubitro.com/
 fields:
-  - id: project-id
+  - id: project_id
     name: Project ID
     description: Qubitro Project ID
     secret: true
-  - id: webhook-signing-key
+  - id: webhook_signing_key
     name: Webhook Signing Key
     description: Qubitro Webhook Signing Key
     secret: true
 format: json
 headers:
-  projectId: "{project-id}"
-  webhookSigningKey: "{webhook-signing-key}"
+  projectId: "{project_id}"
+  webhookSigningKey: "{webhook_signing_key}"
 create-downlink-api-key: false
 base-url: https://webhook.qubitro.com/integrations/ttn
 paths:

@@ -5,16 +5,16 @@ logo-url: https://www.thethingsnetwork.org/conference/wp-content/uploads/2020/01
 info-url: https://core.akenza.io/
 documentation-url: https://akenza.atlassian.net/servicedesk/customer/portals/
 fields:
-  - id: domain-secret
+  - id: domain_secret
     name: Domain Secret
     description: Akenza Core domain secret
     secret: false
-  - id: device-id
+  - id: device_id
     name: Device ID
     description: Akenza Core device ID
     secret: false
 format: json
 create-downlink-api-key: false
-base-url: https://data-gateway.core.akenza.io/v2/up/{domain-secret}?id={device-id}
+base-url: https://data-gateway.core.akenza.io/v2/up/{domain_secret}?id={device_id}
 paths:
   uplink-message: /
