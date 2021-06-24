@@ -1,0 +1,22 @@
+template-id: homey
+name: Homey
+description: Integrate with your Homey
+info-url: https://homey.app/en-ie/
+documentation-url: https://apps.developer.homey.app/cloud/webhooks
+fields:
+  - id: webhook-id
+    name: Webhook ID
+    description: Homey Webhook ID
+    secret: false
+  - id: webhook-token
+    name: Webhook Token
+    description: Token provided by app for authorization
+    secret: true
+format: json
+headers:
+  X-Device-Id: {webhook-token}
+  Content-Type: application/json
+create-downlink-api-key: true
+base-url: https://webhooks.athom.com/webhook/{webhook-id}
+paths:
+  uplink-message: /uplink
