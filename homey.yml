@@ -17,6 +17,6 @@ headers:
   X-Device-Id: {webhook-token}
   Content-Type: application/json
 create-downlink-api-key: true
-base-url: https://webhooks.athom.com/webhook/{webhook-id}
+base-url: https://webhooks.athom.com/webhook/?device_id={webhook-id}
 paths:
   uplink-message: /uplink
