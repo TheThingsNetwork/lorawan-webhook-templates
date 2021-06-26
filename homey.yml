@@ -14,7 +14,7 @@ fields:
     secret: true
 format: json
 headers:
-  X-Device-Id: {keypath-value}
+  x-user-id: {keypath-value}
   Content-Type: application/json
 create-downlink-api-key: true
 base-url: https://webhooks.athom.com/webhook/{webhook-id}
