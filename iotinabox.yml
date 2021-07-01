@@ -5,14 +5,14 @@ logo-url: https://res.cloudinary.com/dctlrnwuz/image/upload/v1619483016/mydevice
 info-url: https://mydevices.com
 documentation-url: https://mydevices.com/iotinabox/support
 fields:
-  - id: x-subscription-key
+  - id: x_subscription_key
     name: Subscription Key
     description: Optional API key used for authorization
     secret: false
     optional: true
 format: json
 headers:
-  x-subscription-key: "{x-subscription-key}"
+  x-subscription-key: "{x_subscription_key}"
 create-downlink-api-key: true
 base-url: https://hub.m2c.io/v1/networks/iotinabox.ttnv3
 paths:
