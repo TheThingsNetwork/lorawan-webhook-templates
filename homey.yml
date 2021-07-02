@@ -2,6 +2,7 @@ template-id: homey
 name: Homey
 description: Integrate The Things Stack with your Homey
 info-url: https://homey.app
+logo-url: https://www.thesmarthomeblog.com/media/rjsjtep2/logo.jpg
 documentation-url: https://apps.developer.homey.app/cloud/webhooks#option-2-webhooks-using-key-path-properties
 fields:
   - id: webhook_id
