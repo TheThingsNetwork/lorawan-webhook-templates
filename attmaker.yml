@@ -14,6 +14,6 @@ format: json
 headers:
   Authorization: Bearer {network_token}
 create-downlink-api-key: true
-base-url: https://api.allthingstalk.io/proxy/network/thingsnetwork3
+base-url: https://api.allthingstalk.io/proxy/network/thingsnetworkv3
 paths:
-  uplink-message: / 
+  uplink-message: ''
