@@ -3,7 +3,7 @@ name: AllThingsTalk Maker
 description: Your accessible IoT Platform for rapid development
 logo-url: https://allthingstalk.blob.core.windows.net/public/AllThingsTalkMaker.png 
 info-url: https://www.allthingstalk.com/maker
-documentation-url: https://docs.allthingstalk.com/networks/use-the-things-network/
+documentation-url: https://docs.allthingstalk.com/networks/use-the-things-network-v3/
 fields:
   - id: network_token
     name: Network token
