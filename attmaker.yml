@@ -1,0 +1,19 @@
+template-id: attmaker
+name: AllThingsTalk Maker
+description: Your accessible IoT Platform for rapid development
+logo-url: https://allthingstalk.blob.core.windows.net/public/AllThingsTalkMaker.png 
+info-url: https://www.allthingstalk.com/maker
+documentation-url: https://docs.allthingstalk.com/networks/use-the-things-network-v3/
+fields:
+  - id: network_token
+    name: Network token
+    description: Network token found in AllThingsTalk Maker
+    secret: true
+    optional: false
+format: json
+headers:
+  Authorization: Bearer {network_token}
+create-downlink-api-key: true
+base-url: https://api.allthingstalk.io/proxy/network/thingsnetworkv3
+paths:
+  uplink-message: ''

@@ -14,7 +14,6 @@ fields:
     name: API Key
     description: API key used for authorization
     secret: false
-    default-value:
 format: json
 headers:
   Authorization: Bearer {api-key}

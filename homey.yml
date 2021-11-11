@@ -1,0 +1,22 @@
+template-id: homey
+name: Homey
+description: Integrate The Things Stack with your Homey
+info-url: https://homey.app
+logo-url: https://homey-logos.s3.eu-west-1.amazonaws.com/logos/256.png
+documentation-url: https://apps.developer.homey.app/cloud/webhooks#option-2-webhooks-using-key-path-properties
+fields:
+  - id: homey_webhookID
+    name: Homey Webhook ID
+    description: Webhook ID provided by Homey app
+    secret: false
+  - id: keypath_value
+    name: Keypath Value
+    description: Keypath value provided by Homey app
+    secret: true
+format: json
+headers:
+  x-user-id: "{keypath_value}"
+create-downlink-api-key: true
+base-url: https://webhooks.athom.com/webhook/{homey_webhookID}
+paths:
+  uplink-message: /
