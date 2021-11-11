@@ -1,35 +1,30 @@
 template-id: uib
-name: UIB 
+name: UIB
 description: Simply communicate
 logo-url: https://uib.ai/assets/images/uib.png
 info-url: https://uib.ai/
 documentation-url: https://uib.ai/
 fields:
   - id: phone_number
-    name: Receiver Phone Number(s) 
+    name: Receiver Phone Number(s)
     description: Phone numbers to which template messages are to be sent.(Add multiple phone numbers separated by comma).
     secret: false
-    default-value: 
   - id: template_name
     name: Template Name
     description: Template Name
     secret: false
-    default-value: 
   - id: template_variables
     name: Template Variables
     description: Template variables should be added as comma separated and in the order as they appear in the template message.
     secret: false
-    default-value: 
   - id: template_id
     name: Template Namespace
     description: Template Namespace
     secret: false
-    default-value: 
   - id: application_key
     name: Application Key
     description: Application Key
     secret: false
-    default-value: 
 format: json
 headers:
   x-application-key: "{application_key}"

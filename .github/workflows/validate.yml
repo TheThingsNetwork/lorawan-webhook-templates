@@ -1,0 +1,46 @@
+name: Validate Webhook Templates
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+
+jobs:
+  validate:
+    name: Validate Webhook Templates
+    runs-on: ubuntu-20.04
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+    - name: Initialize tool binary cache
+      id: tools-cache
+      uses: actions/cache@v2
+      with:
+        path: bin
+        key: ${{ runner.os }}-validate-${{ hashFiles('schema/**.go', '**/go.sum') }}
+    - name: Set up Go
+      uses: actions/setup-go@v2
+      with:
+        go-version: '~1.17'
+      if: steps.tools-cache.outputs.cache-hit != 'true'
+    - name: Initialize Go module cache
+      uses: actions/cache@v2
+      with:
+        path: ~/go/pkg/mod
+        key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+        restore-keys: |
+          ${{ runner.os }}-go-
+      if: steps.tools-cache.outputs.cache-hit != 'true'
+    - name: Download Go tool dependencies
+      run: |
+        cd schema
+        go mod download
+      if: steps.tools-cache.outputs.cache-hit != 'true'
+    - name: Build validate tool
+      run: |
+        cd schema
+        go build -o ../bin/validate ./cmd/validate.go
+      if: steps.tools-cache.outputs.cache-hit != 'true'
+    - name: Validate webhook templates
+      run: ./bin/validate

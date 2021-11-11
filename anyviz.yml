@@ -1,0 +1,23 @@
+template-id: anyviz
+name: AnyViz
+description: Visualize, monitor and analyze data conveniently with AnyViz Cloud
+logo-url: https://cdn.anyviz.io/img/anyviz-logo.svg
+info-url: https://www.anyviz.io
+documentation-url: https://www.anyviz.io/the-things-industries/
+fields:
+  - id: server_instance
+    name: AnyViz instance
+    secret: false
+    default-value: portal.anyviz.io
+  - id: project_Id
+    name: AnyViz project ID
+    description: ID of the AnyViz project, which is displayed in the portal
+    secret: false
+    default-value:
+format: json
+headers:
+  projectId: "{project_Id}"
+create-downlink-api-key: false
+base-url: https://{server_instance}/TheThings/Data
+paths:
+  uplink-message: ""
