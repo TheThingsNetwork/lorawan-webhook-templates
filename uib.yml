@@ -1,7 +1,7 @@
 template-id: uib
 name: UIB
 description: Simply communicate
-logo-url: https://uib.ai/assets/images/uib.png
+logo-url: https://uibai.s3.eu-central-1.amazonaws.com/uib.png
 info-url: https://uib.ai/
 documentation-url: https://uib.ai/
 fields:
