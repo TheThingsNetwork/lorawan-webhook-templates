@@ -1,0 +1,19 @@
+template-id: mclimate
+name: MClimate
+description: Integrate with MClimate
+logo-url: https://i.shgcdn.com/2adc7403-a971-4c2e-9c61-462858641da4/-/format/auto/-/preview/3000x3000/-/quality/lighter/
+info-url: https://mclimate.eu
+documentation-url: https://docs.mclimate.eu/mclimate-lorawan-devices/
+fields:
+  - id: api_key
+    name: API Key
+    description: API key used for authorization
+    secret: false
+format: json
+headers:
+  Authorization: Bearer {api_key}
+create-downlink-api-key: true
+base-url: https://lorawan-broker.seemelissa.com
+paths:
+  uplink-message: /up-tti
+  join_accept: /join-tti
