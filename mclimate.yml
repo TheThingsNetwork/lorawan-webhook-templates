@@ -6,7 +6,7 @@ info-url: https://mclimate.eu
 documentation-url: https://docs.mclimate.eu/mclimate-lorawan-devices/
 fields:
 format: json
-headers:
+headers: {}
 create-downlink-api-key: true
 base-url: https://lorawan-broker.seemelissa.com
 paths:
