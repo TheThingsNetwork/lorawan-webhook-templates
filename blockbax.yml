@@ -23,6 +23,6 @@ headers:
   Authorization: ApiKey {token}
   Content-Type: application/json
 create-downlink-api-key: false
-base-url: https://api.blockbax.com/v1/projects/{projectId}/measurements?autoCreateSubjects={autoCreateSubjects}
+base-url: https://api.blockbax.com/v1/projects/{projectId}/integrations/53c06128-ce26-4dcc-8d74-5c45b302b525/measurements?autoCreateSubjects={autoCreateSubjects}
 paths:
   uplink-message: /
