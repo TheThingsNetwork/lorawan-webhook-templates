@@ -7,17 +7,22 @@ documentation-url: https://blockbax.com/docs/integrations/the-things-network/
 fields:
   - id: projectId
     name: Project ID
-    description: Blockbax Project ID
+    description: Your project ID can be found in the URL when you open your project in the Blockbax web app.
     secret: false
   - id: token
     name: Access token
-    description: Blockbax Access Token Secret
+    description: Create an access token from the project settings in the Blockbax web app and enter the secret here. 
     secret: true
+  - id: autoCreateSubjects
+    name: Automatically create subjects?
+    description: In case a subject does not exist and there is a matching subject type it will be created automatically with its external ID matching your device ID in The Things Stack. Replace this with false to disable this.
+    secret: false
+    default-value: "true"
 format: json
 headers:
   Authorization: ApiKey {token}
   Content-Type: application/json
 create-downlink-api-key: false
-base-url: https://api.blockbax.com/v1/projects/{projectId}/measurements
+base-url: https://api.blockbax.com/v1/projects/{projectId}/measurements?autoCreateSubjects={autoCreateSubjects}
 paths:
   uplink-message: /
