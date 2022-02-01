@@ -1,0 +1,33 @@
+template-id: wonderland
+name: IoT Wonderland
+description: IoT Tracking Platform
+logo-url: https://www.iotwonderland.com/img/logo/wonderland.png
+info-url: https://www.iotwonderland.com
+documentation-url: https://www.iotwonderland.com/docs
+fields:
+  - id: username
+    name: Wonderland Username
+    description: Optional username
+    secret: false
+    optional: true
+  - id: api_key
+    name: Wonderland API Key
+    description: Optional client API key
+    secret: true
+    optional: true
+format: json
+headers:
+  X-API-Key: {api_key}
+create-downlink-api-key: true
+base-url: https://api.lorawonderland.com/master/tts_integration.php{/client_username}
+paths:
+  uplink-message: /
+  join-accept: /
+  downlink-ack: /
+  downlink-nack: /
+  downlink-sent: /
+  downlink-failed: /
+  downlink-queued: /
+  downlink-queue-invalidated: /
+  location-solved: /
+  service-data: /
