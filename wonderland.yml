@@ -17,7 +17,7 @@ fields:
     optional: true
 format: json
 headers:
-  X-API-Key: {api_key}
+  X-API-Key: "{api_key}"
 create-downlink-api-key: true
 base-url: https://api.lorawonderland.com/master/tts_integration.php{/client_username}
 paths:
