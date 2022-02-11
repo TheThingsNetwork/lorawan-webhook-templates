@@ -1,6 +1,6 @@
 template-id: tellsens
 name: tellsens.io
-description: Display and filter your Digital Matter Oyster sensor data on a map.
+description: View your sensor data in maps/geofences and other services.
 logo-url: https://s3.amazonaws.com/appforest_uf/f1643808001788x630735149516113200/tellsens-logo.PNG
 info-url: https://www.tellsens.io
 documentation-url: https://www.tellsens.io/docs
@@ -18,6 +18,6 @@ headers:
   apikey: apikey {apikey}
   clientid: clientid {clientid}	
   Content-Type: application/json
-base-url: http://tellsens.io/api/1.1/wf/tti-oyster
+base-url: http://tellsens.io/api/1.1/wf/tti
 paths:
   uplink-message: /
