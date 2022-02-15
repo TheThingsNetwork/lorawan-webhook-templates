@@ -21,13 +21,13 @@ headers:
 create-downlink-api-key: true
 base-url: https://api.lorawonderland.com/master/tts_integration.php{/username}
 paths:
-  uplink-message: /
-  join-accept: /
-  downlink-ack: /
-  downlink-nack: /
-  downlink-sent: /
-  downlink-failed: /
-  downlink-queued: /
-  downlink-queue-invalidated: /
-  location-solved: /
-  service-data: /
+  uplink-message: ""
+  join-accept: ""
+  downlink-ack: ""
+  downlink-nack: ""
+  downlink-sent: ""
+  downlink-failed: ""
+  downlink-queued: ""
+  downlink-queue-invalidated: ""
+  location-solved: ""
+  service-data: ""
