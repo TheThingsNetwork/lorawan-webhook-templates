@@ -11,4 +11,4 @@ create-downlink-api-key: true
 base-url: https://lorawan-broker.seemelissa.com
 paths:
   uplink-message: /up-tti
-  join_accept: /join-tti
+  join-accept: /join-tti
