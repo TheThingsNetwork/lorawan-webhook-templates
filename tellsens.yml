@@ -1,0 +1,23 @@
+template-id: tellsens
+name: tellsens.io
+description: View your sensor data in maps/geofences and other services.
+logo-url: https://s3.amazonaws.com/appforest_uf/f1643808001788x630735149516113200/tellsens-logo.PNG
+info-url: https://www.tellsens.io
+documentation-url: https://www.tellsens.io/docs
+fields:
+  - id: apikey
+    name: tellsens.io API Key
+    description: API key as provided on tellsens.io
+    secret: false
+  - id: clientid
+    name: tellsens.io Client ID
+    description: Client ID as provided on tellsens.io
+    secret: false
+format: json
+headers:
+  apikey: apikey {apikey}
+  clientid: clientid {clientid}	
+  Content-Type: application/json
+base-url: http://tellsens.io/api/1.1/wf/tti
+paths:
+  uplink-message: /
