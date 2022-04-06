@@ -1,0 +1,21 @@
+template-id: telemetry2u
+name: Telemetry2U
+description: Telemetry2U IoT dashboard and alert system integration
+logo-url: https://telemetry2u.com/images/logo-telemetry2u.svg
+info-url: https://telemetry2u.com/
+documentation-url: https://telemetry2u.com/Documentation/lorawan-iot-platform-registration-help
+fields:
+  - id: token
+    name: Telemetry2U Token
+    description: Integration Token found under Admin - Setup Integration
+    secret: true
+    optional: false
+format: json
+headers:
+  Authorization: Bearer {token}
+create-downlink-api-key: true
+base-url: https://telemetry2u.com/api/ttn
+paths:
+  uplink-message: /uplink
+  join-accept: /join
+  downlink-ack: /ack
