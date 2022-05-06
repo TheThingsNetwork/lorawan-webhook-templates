@@ -1,0 +1,22 @@
+template-id: daizy
+name: Daizy
+description: Integrate with Daizy
+logo-url: https://daizy.io/wp-content/uploads/2021/03/Daizy-Logo-Positive.png
+info-url: https://daizy.io/
+documentation-url: https://daizy.atlassian.net/servicedesk/customer/portals
+fields:
+  - id: organisation_slug
+    name: Organisation Slug
+    description: Your Daizy organisation identifier
+    secret: false
+  - id: uplink_api_key
+    name: Uplink API Key
+    description: The Uplink API key for this organisation
+    secret: true
+headers:
+  x-api-key: "{uplink_api_key}" 
+format: json
+create-downlink-api-key: false
+base-url: https://listen.daizy.io/{organisation_slug}
+paths:
+  uplink-message: /
