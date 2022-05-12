@@ -17,8 +17,5 @@ fields:
 format: json
 create-downlink-api-key: false
 base-url: "{akenza_url}"
-format: json
-create-downlink-api-key: false
-base-url: https://data-gateway.akenza.io
 paths:
   uplink-message: /v3/capture?secret={uplink_secret}
