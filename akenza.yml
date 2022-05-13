@@ -1,20 +1,21 @@
 template-id: akenza
-name: Akenza Core
-description: Integrate with Akenza Core
-logo-url: https://www.thethingsnetwork.org/conference/wp-content/uploads/2020/01/Akenza-LogoClaim-rgb-positive_nb.png
-info-url: https://core.akenza.io/
-documentation-url: https://akenza.atlassian.net/servicedesk/customer/portals/
+name: akenza
+description: Integrate with akenza
+logo-url: https://cdn.prod.akenza.io/images/logo/akenza-io-logo.svg
+info-url: https://app.akenza.io/
+documentation-url: https://docs.akenza.io/get-started/your-integration/the-things-network
 fields:
-  - id: domain_secret
-    name: Domain Secret
-    description: Akenza Core domain secret
+  - id: uplink_secret
+    name: Uplink Secret
+    description: Akenza uplink secret
+    secret: true
+  - id: akenza_url
+    name: Base URL
+    description: Akenza base URL
     secret: false
-  - id: device_id
-    name: Device ID
-    description: Akenza Core device ID
-    secret: false
+    default-value: https://data-gateway.akenza.io
 format: json
 create-downlink-api-key: false
-base-url: https://data-gateway.core.akenza.io/v2/up/{domain_secret}?id={device_id}
+base-url: "{akenza_url}"
 paths:
-  uplink-message: /
+  uplink-message: /v3/capture?secret={uplink_secret}
