@@ -9,13 +9,8 @@ fields:
     name: Uplink Secret
     description: Akenza uplink secret
     secret: true
-  - id: akenza_url
-    name: Base URL
-    description: Akenza base URL
-    secret: false
-    default-value: https://data-gateway.akenza.io
 format: json
 create-downlink-api-key: false
-base-url: "{akenza_url}"
+base-url: https://data-gateway.akenza.io
 paths:
   uplink-message: /v3/capture?secret={uplink_secret}
