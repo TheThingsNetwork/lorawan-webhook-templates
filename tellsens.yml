@@ -15,9 +15,9 @@ fields:
     secret: false
 format: json
 headers:
-  apikey: apikey {apikey}
-  clientid: clientid {clientid}	
+  apikey: {apikey}
+  clientid: {clientid}	
   Content-Type: application/json
-base-url: http://tellsens.io/api/1.1/wf/tti
+base-url: http://tellsens.io/tti
 paths:
   uplink-message: /
