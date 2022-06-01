@@ -3,7 +3,7 @@ name: my IoT open Tech
 description: Open, free and neutral IoT Platform
 logo-url: https://web.iotopentech.io/images/myiot/logo_my_iot_open_tech_my_iot_legram.png
 info-url: https://web.iotopentech.io/myiot.html
-documentation-url: https://web.iotopentech.io/myiot/documentation.html
+documentation-url: https://iotopentech.github.io/myIoTopenTech/integrations/the-things-network.html
 fields:  
   - id: token
     name: Control Device Token
