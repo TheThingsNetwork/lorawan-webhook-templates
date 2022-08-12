@@ -16,6 +16,6 @@ headers:
   Authorization: ApiKey {token}
   Content-Type: application/json
 create-downlink-api-key: false
-base-url: "{endpoint}"
+base-url: "{+endpoint}"
 paths:
   uplink-message: /
