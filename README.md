@@ -2,7 +2,7 @@
 
 This repository contains Webhook templates to be used with The Things Stack.
 
-Webhook templates [format](https://thethingsstack.io/latest/integrations/webhooks/webhook-templates/format/) and [instantiation](https://thethingsstack.io/latest/integrations/webhooks/webhook-templates/instantiation/) process are defined by The Things Stack official documentation.
+Webhook templates [format](https://www.thethingsindustries.com/docs/integrations/webhooks/webhook-templates/format/) and [instantiation](https://www.thethingsindustries.com/docs/integrations/webhooks/webhook-templates/instantiation/) process are defined by The Things Stack official documentation.
 
 ## File Format
 
