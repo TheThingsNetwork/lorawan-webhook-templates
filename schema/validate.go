@@ -91,6 +91,7 @@ func (p WebhookTemplatePaths) Validate(fields []WebhookTemplateField) error {
 		value *string
 	}{
 		{"uplink-message", p.UplinkMessage},
+		{"uplink-normalized", p.UplinkNormalized},
 		{"join-accept", p.JoinAccept},
 		{"downlink-ack", p.DownlinkAck},
 		{"downlink-nack", p.DownlinkNack},
