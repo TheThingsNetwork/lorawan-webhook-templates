@@ -33,6 +33,7 @@ type WebhookTemplate struct {
 // WebhookTemplatePaths defines optional paths for each upstream message type.
 type WebhookTemplatePaths struct {
 	UplinkMessage            *string `yaml:"uplink-message,omitempty"`
+	UplinkNormalized         *string `yaml:"uplink-normalized,omitempty"`
 	JoinAccept               *string `yaml:"join-accept,omitempty"`
 	DownlinkAck              *string `yaml:"downlink-ack,omitempty"`
 	DownlinkNack             *string `yaml:"downlink-nack,omitempty"`
