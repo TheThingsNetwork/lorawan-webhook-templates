@@ -1,0 +1,30 @@
+template-id: thingerio
+name: Thinger.io
+description: Integrate with Thinger.io Platform
+logo-url: https://s3.eu-west-1.amazonaws.com/thinger.io.files/logos/thinger_logo_black/thinger_logo_black.png
+info-url: https://thinger.io
+documentation-url: https://docs.thinger.io/plugins/the-things-stack
+fields:
+  - id: server_instance
+    name: Thinger.io instance
+    description: Name of the instance, hostname or domain
+    secret: false
+    optional: false
+    default-value: acme.thinger.io
+  - id: user
+    name: Thinger.io user
+    description: User that deployed the plugin in Thinger.io
+    secret: false
+    optional: false
+  - id: authorization_header
+    name: Authorization Header
+    description: Thinger.io TTS Plugin Authorization Header
+    secret: false
+    optional: false
+format: json
+headers:
+  Authorization: "{authorization_header}"
+create-downlink-api-key: true
+base-url: https://{server_instance}/users/{user}/plugins/ttn-stack
+paths:
+  uplink-message: /uplink
