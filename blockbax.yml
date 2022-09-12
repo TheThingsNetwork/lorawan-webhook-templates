@@ -5,21 +5,17 @@ logo-url: https://blockbax.com/images/logo-green.png
 info-url: https://blockbax.com/
 documentation-url: https://blockbax.com/docs/integrations/the-things-network/
 fields:
-  - id: projectId
-    name: Blockbax Project ID
-    secret: false
   - id: token
-    name: Blockbax Access token
+    name: Blockbax access token
     secret: true
-  - id: autoCreateSubjects
-    name: Automatically create subjects?
+  - id: endpoint
+    name: Endpoint
     secret: false
-    default-value: "true"
 format: json
 headers:
   Authorization: ApiKey {token}
   Content-Type: application/json
 create-downlink-api-key: false
-base-url: https://api.blockbax.com/v1/projects/{projectId}/integrations/53c06128-ce26-4dcc-8d74-5c45b302b525/measurements?autoCreateSubjects={autoCreateSubjects}
+base-url: "{+endpoint}"
 paths:
   uplink-message: /
