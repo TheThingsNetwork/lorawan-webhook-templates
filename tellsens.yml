@@ -15,7 +15,7 @@ fields:
     secret: false
 format: json
 headers:
-  apikey: {apikey}
+  apikey: "{apikey}"
   clientid: {clientid}	
   Content-Type: application/json
 base-url: http://tellsens.io/tti
