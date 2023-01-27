@@ -5,10 +5,20 @@ logo-url: https://cdn.shopify.com/s/files/1/0043/8874/9379/files/mclimate-logo-c
 info-url: https://mclimate.eu
 documentation-url: https://docs.mclimate.eu/mclimate-lorawan-devices/
 fields:
+  - id: m-token
+    name: M Token
+    description: You can create your M-token in section Integrations in MClimate Enterprise solution.
+    secret: false
+    default-value:
 format: json
-headers: {}
+headers: 
+  m-token: "{m-token}"
+
 create-downlink-api-key: true
-base-url: https://lorawan-broker.seemelissa.com
+base-url: https://lorawan-broker.mclimate.eu
 paths:
   uplink-message: /up-tti
   join-accept: /join-tti
+  downlink-ack: /ack-tti
+  downlink-sent: /sent-tti
+  downlink-queued: /queued-tti
