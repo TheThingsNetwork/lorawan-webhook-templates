@@ -1,0 +1,18 @@
+template-id: myiotopentech
+name: my IoT open Tech
+description: Open, free and neutral IoT Platform
+logo-url: https://web.iotopentech.io/images/myiot/logo_my_iot_open_tech_my_iot_legram.png
+info-url: https://www.doc.my.iotopentech.io/
+documentation-url: https://www.doc.my.iotopentech.io//integrations/the-things-network.html
+fields:  
+  - id: token
+    name: Control Device Token
+    description: Token of your Control Device in my IoT open Tech
+    secret: true
+format: json
+headers:
+  Content-Type: application/json  
+create-downlink-api-key: true
+base-url: https://my.iotopentech.io/api/v1/{token}/telemetry
+paths:
+  uplink-message: /
