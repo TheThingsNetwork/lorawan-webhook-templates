@@ -7,7 +7,7 @@ documentation-url: https://docs.mclimate.eu/mclimate-lorawan-devices/
 fields:
   - id: m-token
     name: M Token
-    description: You can create your M-token in section Integrations in MClimate Enterprise solution.
+    description: Create your M-token in the Integrations section in MClimate Enterprise solution.
     secret: false
     default-value:
 format: json
