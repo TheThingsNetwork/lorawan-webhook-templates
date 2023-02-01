@@ -13,7 +13,6 @@ fields:
 format: json
 headers: 
   m-token: "{m-token}"
-
 create-downlink-api-key: true
 base-url: https://lorawan-broker.mclimate.eu
 paths:
