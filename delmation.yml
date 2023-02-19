@@ -1,0 +1,18 @@
+template-id: delmation
+name: Delmation
+description: Send your sensor data to the Delmation IoT portal
+logo-url: https://delmation.nl/tts/images/logo.png
+info-url: https://delmation.nl/tti
+documentation-url: https://delmation.nl/tts/integrations/the-things-stack/
+fields:
+  - id: docksters_API_Key
+    name: API Key
+    description: The API key allows The Things Stack to send data to the Delmation IoT portal
+    secret: true
+format: json
+headers:
+  Content-Type: application/json
+create-downlink-api-key: false
+base-url: https://data.docksters.io/gateway/submit/{docksters_API_Key}
+paths:
+  uplink-message: /
