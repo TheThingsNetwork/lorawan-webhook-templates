@@ -1,0 +1,17 @@
+template-id: dotqore
+name: DotQore
+description: The reality of the environment in your hands
+logo-url: https://dotqore.com.co/landing/assets/layout/images/landing/dotqore.png 
+info-url: https://dotqore.com.co/landing/
+documentation-url: https://github.com/DotQore/Manuales/blob/main/Manual-Connection-Own-TheThingsNetwork_WebHook-LoRaWAN.pdf
+fields:
+  - id: collectorNodeURL
+    name: Collector Node URL
+    description: URL of collector node in DotQore's client
+    secret: false
+format: json
+create-downlink-api-key: false
+headers: {}
+base-url:  "{+collectorNodeURL}"
+paths:
+  uplink-message: /dotqore/lorawan/ttn
