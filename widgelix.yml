@@ -1,23 +1,19 @@
 template-id: widgelix
 name: Widgelix
 description: Integrate with Widgelix
-logo-url: https://greenmesh.org/wp-content/uploads/2021/12/WH-Trans-400x111.png
-info-url: https://widgelix.com/
-documentation-url: https://widgelix.readme.io/reference/
+logo-url: https://app.widgelix.com/assets/widgelix_logo.7acd323c.svg
+info-url: https://app.widgelix.com/
+documentation-url: https://docs.widgelix.com/
 fields:
-  - id: webhookPath
-    name: Webhook path
-    description: Dataflow webhook path
-    secret: false
-  - id: apiToken
-    name: API token
-    description: Dataflow API token
+  - id: apiKey
+    name: API Key
+    description: Secure your connection with an API key
     secret: false
 format: json
 headers:
   Content-Type: application/json
-  x-access-token: "{apiToken}"
+  Authorization: "Bearer {apiKey}"
 create-downlink-api-key: false
-base-url: https://widgelix.com/v2/{webhookPath}
+base-url: https://app.widgelix.com/v1/input-node/ttn
 paths:
   uplink-message: /
