@@ -1,0 +1,18 @@
+template-id: unaconnect
+name: UnaConnect
+description: Integrate The Things Stack and UnaConnect
+fields:
+  - id: region
+    name: UnaConnect server region
+    description: UnaConnect supports Asia-Pacific (Singapore) aps-1 and Europe (Paris) euw-1
+    secret: false
+    default-value: aps-1
+logo-url: https://www.unabiz.com/wp-content/uploads/2019/11/cropped-unabiz-logox350-opt.png
+info-url: https://www.unabiz.com
+documentation-url: https://docs.unaconnect.io
+format: json
+headers: {}
+create-downlink-api-key: false
+base-url: https://{region}.network.unaconnect.io
+paths:
+  uplink-message: /tti/data
