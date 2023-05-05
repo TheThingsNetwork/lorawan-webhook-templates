@@ -21,3 +21,7 @@ create-downlink-api-key: true
 base-url: https://www.example.com{/region}
 paths:
   uplink-message: /uplink
+field-mask:
+  - end_device_ids.dev_eui
+  - received_at
+  - up.uplink_message.decoded_payload
