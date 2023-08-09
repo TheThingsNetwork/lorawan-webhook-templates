@@ -16,3 +16,10 @@ create-downlink-api-key: false
 base-url: https://m2m.dezem.de/services/import/lorawan/data-1.php
 paths:
   uplink-message: /
+field-mask:
+  - end_device_ids.dev_eui
+  - received_at
+  - up.uplink_message.decoded_payload
+  - up.uplink_message.rx_metadata
+  - up.uplink_message.settings.data_rate.modulation.lora.spreading_factor
+  - up.uplink_message.frm_payload

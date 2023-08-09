@@ -28,6 +28,7 @@ type WebhookTemplate struct {
 	Fields               []WebhookTemplateField `yaml:"fields,omitempty"`
 	CreateDownlinkAPIKey bool                   `yaml:"create-downlink-api-key"`
 	Paths                WebhookTemplatePaths   `yaml:"paths,omitempty"`
+	FieldMask            []string               `yaml:"field-mask,omitempty"`
 }
 
 // WebhookTemplatePaths defines optional paths for each upstream message type.
