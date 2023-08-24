@@ -1,0 +1,18 @@
+template-id: pth-webhook
+name: Pilot Things
+description: Integrate with Pilot Things
+logo-url: https://uploads-ssl.webflow.com/5f8d948f34c9a0f2d3cb9061/5f983bc50422104f8fd31232_PilotThings_Logo_Bleu.png
+info-url: https://www.pilot-things.com/
+documentation-url: https://www.pilot-things.com/support/iot
+fields:
+  - id: apikey
+    name: Pilot Things API Key
+    description: API key as provided on Pilot Things
+    secret: false
+format: json
+headers:
+  apikey: apikey {apikey}
+  Content-Type: application/json
+base-url: https://api.pilot-things.cloud/network/http/tti
+paths:
+  uplink-message: /
