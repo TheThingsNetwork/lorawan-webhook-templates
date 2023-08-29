@@ -1,7 +1,7 @@
 template-id: widgelix
 name: Widgelix
 description: Integrate with Widgelix
-logo-url: https://app.widgelix.com/assets/widgelix_logo.7acd323c.svg
+logo-url: https://app.widgelix.com/cdn/app.widgelix.com/logo.png
 info-url: https://app.widgelix.com/
 documentation-url: https://docs.widgelix.com/
 fields:
