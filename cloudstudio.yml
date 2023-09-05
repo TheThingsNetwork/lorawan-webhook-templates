@@ -1,7 +1,7 @@
 template-id: cloud-studio-plugin
 name: Cloud Studio
 description: Integrate with Cloud Studio IoT platform
-logo-url: https://static.cloud.studio/images/ttn/logos/cloud-studio-logo.png
+logo-url: https://www.cloud.studio/wp-content/uploads/2022/04/cloudstudio-logo-SVG-gradiente.svg
 info-url: https://www.cloud.studio/
 documentation-url: https://wiki.cloud.studio/page/174
 fields:
