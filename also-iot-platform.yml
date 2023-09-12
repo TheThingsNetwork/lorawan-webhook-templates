@@ -1,0 +1,19 @@
+template-id: also-iot-platform
+name: ALSO IoT Platform
+description: A commercial-ready IoT solution to deploy or resell to your customers immediately
+logo-url: https://also.allthingstalk.com/assets/img/brand/also/logo-full-2-372baab0a0.svg 
+info-url: https://www.allthingstalk.com/iot-also-resellers
+documentation-url: https://docs.allthingstalk.com/networks/use-the-things-network-v3/
+fields:
+  - id: network_token
+    name: Network token
+    description: Network token from your device's connectivity settings.
+    secret: true
+    optional: false
+format: json
+headers:
+  Authorization: Bearer {network_token}
+create-downlink-api-key: true
+base-url: https://also.allthingstalk.io/proxy/network/thingsnetworkv3
+paths:
+  uplink-message: ''
