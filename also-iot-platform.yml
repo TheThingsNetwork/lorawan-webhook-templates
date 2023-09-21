@@ -7,7 +7,7 @@ documentation-url: https://docs.allthingstalk.com/networks/use-the-things-networ
 fields:
   - id: network_token
     name: Network token
-    description: Network token from your device's connectivity settings.
+    description: Network token from your device's connectivity settings on ALSO IoT Platform.
     secret: true
     optional: false
 format: json
