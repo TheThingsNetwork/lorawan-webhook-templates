@@ -1,0 +1,27 @@
+template-id: microshare
+name: Microshare
+description: Send your sensor data to the Microshare IoT platform
+logo-url: https://www.microshare.io/wp-content/uploads/2023/06/logo-clearbkgd-2023-USA-grey-text-tagline-1000px.png
+info-url: https://www.microshare.io/
+documentation-url: https://docs.microshare.io/docs/2/
+fields:
+  - id: instance
+    name: Microshare Instance
+    description: Enter "daks" for Development System or "paks" for Production System
+    default-value: daks
+  - id: recType
+    name: Microshare Record Type
+    description: Enter "io.microshare.motion.packed" for Motion, "io.microshare.feedback.packed" for Feedback or "io.microshare.environment.packed" for Environment Record Type
+    default-value: io.microshare.motion.packed
+  - id: token
+    name: Token
+    description: Microshare API Token
+    secret: true
+    default-value:
+format: json
+headers:
+  Authorization: Bearer {token}
+create-downlink-api-key: false
+base-url: https://ingest.{instance}.microshare.io/share/{recType}/{token}
+paths:
+  uplink-message: /
