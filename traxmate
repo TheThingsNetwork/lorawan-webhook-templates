@@ -5,18 +5,15 @@ logo-url: https://traxmate.io/wp-content/uploads/2023/10/8429011b-92b9-4f53-b9fd
 info-url: https://traxmate.io
 documentation-url: https://traxmate.io/support/getting-started/
 fields:
+ fields:
   - id: token
     name: Servicetoken
     description: Traxmate API Servicetoken
     secret: true
-  - id: devEUI
-    name: devEUI
-    description: Unique Hardware Identifier
-    secret: false
 format: json
 headers:
   Authorization: Token {token}
 create-downlink-api-key: true
-base-url: http://online.traxmate.io:3000/capture/{token}/device/{devEUI}
+base-url: https://capture.v1.traxmate.io/capture/{token}
 paths:
   uplink-message: 
