@@ -15,5 +15,5 @@ headers:
 create-downlink-api-key: true
 base-url: https://capture.v1.traxmate.io/capture/{token}
 paths:
-  uplink-message: /device/up{/devID}
+  uplink-message: /device{/devID}
   
