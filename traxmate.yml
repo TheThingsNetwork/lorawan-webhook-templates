@@ -1,0 +1,19 @@
+template-id: 31
+name: Traxmate
+description: Send data to Traxmate via TTI adapter
+logo-url: https://traxmate.io/wp-content/uploads/2023/10/8429011b-92b9-4f53-b9fd-49285d29c437.png
+info-url: https://traxmate.io
+documentation-url: https://traxmate.io/support/getting-started/
+fields:
+  - id: token
+    name: Servicetoken
+    description: Traxmate API Servicetoken - found under Settings -> Account
+    secret: true
+format: json
+headers:
+  Authorization: Token {token}
+create-downlink-api-key: true
+base-url: https://capture.v1.traxmate.io/capture/{token}
+paths:
+  uplink-message: /device/up{/devID}
+  
