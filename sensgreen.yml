@@ -1,0 +1,19 @@
+template-id: sensgreen
+name: sensgreen
+description: Integrate with Sensgreen
+logo-url: https://sensgreen.com/wp-content/uploads/2023/04/indir-1-kopya.png
+info-url: https://sensgreen.com/
+documentation-url: https://intercom.help/sensgreen-support/en/
+fields:
+  - id: api_key
+    name: API Key
+    description: Sensgreen API Token for authorization
+    secret: false
+format: json
+headers:
+  Authorization: Bearer {api_key}
+  Content-Type: application/json
+create-downlink-api-key: false
+base-url: https://prod.api.sensgreen.com/integrations/ttn
+paths:
+  uplink-message: /data/
