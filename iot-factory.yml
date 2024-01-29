@@ -1,0 +1,23 @@
+template-id: iot-factory
+name: IoT Factory
+description: Smart Metering & Asset Tracking
+logo-url: https://iotfactory.eu/wp-content/uploads/2017/12/iot-factory-white.png
+info-url: https://iotfactory.eu/products/
+#documentation-url: https://
+
+fields:
+  - id: clientID
+    name: Client ID
+    description: Iot Factory client ID
+    secret: true
+    optional: false
+
+format: json
+
+create-downlink-api-key: true
+
+base-url: https://report.iotfactory.eu/api/measurements
+paths:
+  uplink-message: /capture?secret={clientID}/ttn
+#  downlink-sent : /capture?secret={clientID}/ttn
+#  downlink-failed : /capture?secret={clientID}/ttn
