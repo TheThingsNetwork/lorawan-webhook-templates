@@ -17,4 +17,4 @@ create-downlink-api-key: true
 
 base-url: https://report.iotfactory.eu/api/measurements
 paths:
-  uplink-message: /capture?secret={clientID}/ttn
+  uplink-message: /{clientID}/ttn
