@@ -5,7 +5,7 @@ const { createObjectCsvWriter } = require('csv-writer');
 
 // Define paths to the templates.yml file and the directory containing the template files
 const templatesYmlPath = path.join(__dirname, '..', 'templates.yml');
-const templatesDir = (__dirname, '..');
+const templatesDir = path.join(__dirname, '..');
 
 // Read and parse the templates.yml file
 const templatesYml = fs.readFileSync(templatesYmlPath, 'utf8');
@@ -13,7 +13,7 @@ const templateNames = yaml.parse(templatesYml);
 
 // Define the CSV writer
 const csvWriter = createObjectCsvWriter({
-    path: 'templates.csv',
+    path: path.join(__dirname, 'templates.csv'),
     header: [
         { id: 'name', title: 'Name' },
         { id: 'description', title: 'Description' },
