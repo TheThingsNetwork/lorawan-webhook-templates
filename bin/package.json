@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "csv-writer": "^1.6.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "yaml": "^2.4.3"
+  }
+}
