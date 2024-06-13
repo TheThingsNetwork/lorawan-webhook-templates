@@ -22,7 +22,7 @@ jobs:
         run: node bin/csv.js
       - name: Upload to Airtable
         run: |
-          curl -X POST ${{ secrets.AIRTABLE_WEBHOOKS_API_ENDPOINT }} \
+          curl POST ${{ secrets.AIRTABLE_WEBHOOKS_API_ENDPOINT }} \
           -H "Authorization: Bearer ${{ secrets.AIRTABLE_WEBHOOKS_API_KEY }}" \
           -H "Content-Type: text/csv" \
           --data-binary "@bin/templates.csv"
