@@ -19,7 +19,6 @@ const csvWriter = createObjectCsvWriter({
         { id: 'description', title: 'Description' },
         { id: 'documentationUrl', title: 'Documentation URL' },
         { id: 'format', title: 'Format' },
-        { id: 'logoUrl', title: 'Logo URL' }
     ]
 });
 
@@ -37,7 +36,6 @@ const readTemplateFile = (templateName) => {
         description: templateData.description,
         documentationUrl: templateData['documentation-url'],
         format: format,
-        logoUrl: templateData['logo-url']
     };
 };
 
