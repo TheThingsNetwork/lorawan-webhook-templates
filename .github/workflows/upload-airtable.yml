@@ -1,0 +1,28 @@
+name: Upload to Airtable
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  csv:
+    name: Upload CSV to Airtable
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install Node.js dependencies
+        run: npm ci
+      - name: Create templates.csv
+        run: node bin/csv.js
+      - name: Upload to Airtable
+        run: |
+          curl POST ${{ secrets.AIRTABLE_WEBHOOKS_API_ENDPOINT }} \
+          -H "Authorization: Bearer ${{ secrets.AIRTABLE_WEBHOOKS_API_KEY }}" \
+          -H "Content-Type: text/csv" \
+          --data-binary "@bin/templates.csv"
