@@ -1,9 +1,9 @@
 template-id: traxmate
 name: Traxmate
 description: Send data to Traxmate via TTI adapter
-logo-url: https://traxmate.io/wp-content/uploads/2023/10/8429011b-92b9-4f53-b9fd-49285d29c437.png
-info-url: https://traxmate.io
-documentation-url: https://traxmate.io/support/getting-started/
+logo-url: https://traxmate.io/wp-content/uploads/2024/08/traxmate-logo.black_.square.png
+info-url: https://traxmate.io/platform/
+documentation-url: https://traxmate.io/developer-resources/
 fields:
   - id: token
     name: Servicetoken
