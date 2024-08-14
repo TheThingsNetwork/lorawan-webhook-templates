@@ -4,6 +4,7 @@ description: Integrate with Thinger.io Platform
 logo-url: https://s3.eu-west-1.amazonaws.com/thinger.io.files/logos/thinger_logo_black/thinger_logo_black.png
 info-url: https://thinger.io
 documentation-url: https://docs.thinger.io/plugins/the-things-stack
+stack-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/thinger-io/
 fields:
   - id: server_instance
     name: Thinger.io instance

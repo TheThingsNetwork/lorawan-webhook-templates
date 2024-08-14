@@ -4,6 +4,7 @@ description: Plug-and-Play IoT Solutions
 logo-url: https://res.cloudinary.com/dctlrnwuz/image/upload/v1619483016/mydevices/iot-logo-mydevices.png
 info-url: https://mydevices.com
 documentation-url: https://mydevices.com/iotinabox/support
+stack-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/iotinabox/
 fields:
   - id: x_subscription_key
     name: Subscription Key

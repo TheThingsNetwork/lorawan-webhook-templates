@@ -4,6 +4,7 @@ description: A commercial-ready IoT solution to deploy or resell to your custome
 logo-url: https://also.allthingstalk.com/assets/img/brand/also/logo-full-2-372baab0a0.svg 
 info-url: https://www.allthingstalk.com/iot-also-resellers
 documentation-url: https://docs.allthingstalk.com/networks/use-the-things-network-v3/
+stack-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/allthingstalk/
 fields:
   - id: network_token
     name: Network token

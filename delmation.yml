@@ -4,6 +4,7 @@ description: Send your sensor data to the Delmation IoT portal
 logo-url: https://delmation.nl/tts/images/logo.png
 info-url: https://delmation.nl/tti
 documentation-url: https://delmation.nl/tts/integrations/the-things-stack/
+stack-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/delmation/
 fields:
   - id: docksters_API_Key
     name: API Key

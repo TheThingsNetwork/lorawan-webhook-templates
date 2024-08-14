@@ -4,6 +4,7 @@ description: Send data to ThingSpeak channel
 logo-url: https://brands.home-assistant.io/_/thingspeak/logo.png
 info-url: https://thingspeak.com/
 documentation-url: https://www.mathworks.com/help/thingspeak/index.html
+stack-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/thingspeak/
 fields:
   - id: channelid
     name: Channel ID
