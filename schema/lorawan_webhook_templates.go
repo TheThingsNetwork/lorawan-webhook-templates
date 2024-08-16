@@ -16,20 +16,20 @@ package schema
 
 // WebhookTemplate defines information about a Webhook Template for The Things Stack.
 type WebhookTemplate struct {
-	TemplateID            string                 `yaml:"template-id"`
-	Name                  string                 `yaml:"name"`
-	Description           string                 `yaml:"description"`
-	LogoURL               string                 `yaml:"logo-url"`
-	InfoURL               string                 `yaml:"info-url"`
-	DocumentationURL      string                 `yaml:"documentation-url"`
-	StackDocumentationURL string                 `yaml:"stack-documentation-url"`
-	BaseURL               string                 `yaml:"base-url"`
-	Headers               map[string]string      `yaml:"headers,omitempty"`
-	Format                string                 `yaml:"format"`
-	Fields                []WebhookTemplateField `yaml:"fields,omitempty"`
-	CreateDownlinkAPIKey  bool                   `yaml:"create-downlink-api-key"`
-	Paths                 WebhookTemplatePaths   `yaml:"paths,omitempty"`
-	FieldMask             []string               `yaml:"field-mask,omitempty"`
+	TemplateID           string                 `yaml:"template-id"`
+	Name                 string                 `yaml:"name"`
+	Description          string                 `yaml:"description"`
+	LogoURL              string                 `yaml:"logo-url"`
+	InfoURL              string                 `yaml:"info-url"`
+	DocumentationURL     string                 `yaml:"documentation-url"`
+	TTSDocumentationURL  string                 `yaml:"tts-documentation-url"`
+	BaseURL              string                 `yaml:"base-url"`
+	Headers              map[string]string      `yaml:"headers,omitempty"`
+	Format               string                 `yaml:"format"`
+	Fields               []WebhookTemplateField `yaml:"fields,omitempty"`
+	CreateDownlinkAPIKey bool                   `yaml:"create-downlink-api-key"`
+	Paths                WebhookTemplatePaths   `yaml:"paths,omitempty"`
+	FieldMask            []string               `yaml:"field-mask,omitempty"`
 }
 
 // WebhookTemplatePaths defines optional paths for each upstream message type.

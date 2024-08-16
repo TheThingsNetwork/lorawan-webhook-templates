@@ -4,7 +4,7 @@ description: Integrate with Blockbax
 logo-url: https://blockbax.com/images/logo-green.png
 info-url: https://blockbax.com/
 documentation-url: https://blockbax.com/docs/integrations/the-things-network/
-stack-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/blockbax/
+tts-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/blockbax/
 fields:
   - id: token
     name: Blockbax access token

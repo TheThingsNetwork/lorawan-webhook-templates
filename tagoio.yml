@@ -4,7 +4,7 @@ description: Integrate with TagoIO
 logo-url: https://partners.sigfox.com/assets/logo-for/5acccca69bffaf0001201a45
 info-url: https://tago.io/
 documentation-url: https://community.tago.io/t/how-to-integrate-tagoio-with-ttn-v3/374
-stack-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/tagoio/
+tts-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/tagoio/
 fields:
   - id: auth
     name: Authorization

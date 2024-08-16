@@ -4,7 +4,7 @@ description: Integrate with Ubidots using Plugins
 logo-url: https://res.cloudinary.com/di2vaxvhl/image/upload/v1622207170/Ubidots%20logos/logo-ubi-png.png
 info-url: https://ubidots.com/
 documentation-url: https://help.ubidots.com/en/articles/5096476-plugins-connect-the-things-stack-to-ubidots
-stack-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/ubidots/
+tts-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/ubidots/
 fields:
   - id: plugin_id
     name: Plugin ID

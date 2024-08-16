@@ -4,7 +4,7 @@ description: Integrate with MClimate
 logo-url: https://cdn.shopify.com/s/files/1/0043/8874/9379/files/mclimate-logo-crop.jpg?v=1639751590
 info-url: https://mclimate.eu
 documentation-url: https://docs.mclimate.eu/mclimate-lorawan-devices/integrations/the-things-industries
-stack-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/mclimate/
+tts-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/mclimate/
 fields:
   - id: token
     name: M Token

@@ -140,9 +140,9 @@ func (t WebhookTemplate) Validate() error {
 			return fmt.Errorf("documentation-url is not valid: %w", err)
 		}
 	}
-	if t.StackDocumentationURL != "" {
-		if err := testURL(t.StackDocumentationURL); err != nil {
-			return fmt.Errorf("stack-documentation-url is not valid: %w", err)
+	if t.TTSDocumentationURL != "" {
+		if err := testURL(t.TTSDocumentationURL); err != nil {
+			return fmt.Errorf("tts-documentation-url is not valid: %w", err)
 		}
 	}
 	if !validIdentifierRegex.MatchString(t.Format) {

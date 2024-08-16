@@ -4,7 +4,7 @@ description: Send your data to Qubitro
 logo-url: https://cdn.qubitro.com/landing/qubitro_nav_logo.png
 info-url: https://www.qubitro.com/
 documentation-url: https://docs.qubitro.com/
-stack-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/qubitro/
+tts-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/qubitro/
 fields:
   - id: project_id
     name: Project ID

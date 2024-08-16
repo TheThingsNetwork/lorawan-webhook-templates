@@ -4,7 +4,7 @@ description: Send data to Datacake via TTI adapter
 logo-url: https://cdn.datacake-k8s.com/public/tts/datacake-logo-tts@256w.png
 info-url: https://datacake.co/
 documentation-url: https://docs.datacake.de/
-stack-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/datacake/
+tts-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/datacake/
 fields:
   - id: token
     name: Token

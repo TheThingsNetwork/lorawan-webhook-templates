@@ -4,7 +4,7 @@ description: Integrate with Widgelix
 logo-url: https://app.widgelix.com/cdn/app.widgelix.com/logo.png
 info-url: https://app.widgelix.com/
 documentation-url: https://docs.widgelix.com/
-stack-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/widgelix/
+tts-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/widgelix/
 fields:
   - id: apiKey
     name: API Key
