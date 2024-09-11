@@ -4,6 +4,7 @@ description: View your sensor data in maps/geofences and other services.
 logo-url: https://s3.amazonaws.com/appforest_uf/f1643808001788x630735149516113200/tellsens-logo.PNG
 info-url: https://www.tellsens.io
 documentation-url: https://www.tellsens.io/docs
+tts-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/tellsens/
 fields:
   - id: apikey
     name: tellsens.io API Key

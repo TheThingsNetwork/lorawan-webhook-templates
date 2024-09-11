@@ -10,6 +10,7 @@ fields:
 logo-url: https://www.unabiz.com/wp-content/uploads/2019/11/cropped-unabiz-logox350-opt.png
 info-url: https://www.unabiz.com
 documentation-url: https://docs.unaconnect.io
+tts-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/unaconnect/
 format: json
 headers: {}
 create-downlink-api-key: false

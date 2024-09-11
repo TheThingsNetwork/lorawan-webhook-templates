@@ -22,6 +22,7 @@ type WebhookTemplate struct {
 	LogoURL              string                 `yaml:"logo-url"`
 	InfoURL              string                 `yaml:"info-url"`
 	DocumentationURL     string                 `yaml:"documentation-url"`
+	TTSDocumentationURL  string                 `yaml:"tts-documentation-url"`
 	BaseURL              string                 `yaml:"base-url"`
 	Headers              map[string]string      `yaml:"headers,omitempty"`
 	Format               string                 `yaml:"format"`

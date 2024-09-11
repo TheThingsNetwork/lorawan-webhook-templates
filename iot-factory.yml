@@ -3,7 +3,6 @@ name: IoT Factory
 description: Smart Metering & Asset Tracking
 logo-url: https://iotfactory.eu/wp-content/uploads/2023/01/IOT-SmartCities-Smart-Solutions-in-Brussels.png
 info-url: https://iotfactory.eu/products/
-
 fields:
   - id: clientID
     name: Client ID

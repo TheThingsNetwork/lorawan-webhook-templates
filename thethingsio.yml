@@ -4,6 +4,7 @@ description: Integrate with thethings.iO
 logo-url: https://thethings.io/wp-content/uploads/2017/03/Logo-2.jpg
 info-url: https://thethings.io/
 documentation-url: https://developers.thethings.io/
+tts-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/thethingsio/
 fields:
   - id: productID
     name: Product ID

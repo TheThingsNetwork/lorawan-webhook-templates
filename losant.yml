@@ -4,6 +4,7 @@ description: Integrate with the Losant Enterprise IoT Platform
 logo-url: https://www.losant.com/hubfs/Logo/losant-logo-stack-01-03.png
 info-url: https://www.losant.com
 documentation-url: https://docs.losant.com/guides/how-to-integrate-with-the-things-stack/
+tts-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/losant/
 fields:
   - id: uniqueIdOfLosantWebhook
     name: Unique ID from the Losant Webhook URL

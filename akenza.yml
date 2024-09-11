@@ -4,6 +4,7 @@ description: Integrate with akenza
 logo-url: https://cdn.prod.akenza.io/images/logo/akenza-io-logo.svg
 info-url: https://app.akenza.io/
 documentation-url: https://docs.akenza.io/get-started/your-integration/the-things-network
+tts-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/akenza/
 fields:
   - id: uplink_secret
     name: Uplink Secret

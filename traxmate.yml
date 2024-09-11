@@ -3,7 +3,7 @@ name: Traxmate
 description: Send data to Traxmate via TTI adapter
 logo-url: https://traxmate.io/wp-content/uploads/2023/10/8429011b-92b9-4f53-b9fd-49285d29c437.png
 info-url: https://traxmate.io
-documentation-url: https://traxmate.io/support/getting-started/
+documentation-url: https://traxmate.io/docs-category/getting-started/
 fields:
   - id: token
     name: Servicetoken

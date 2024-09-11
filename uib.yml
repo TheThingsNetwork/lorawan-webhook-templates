@@ -4,6 +4,7 @@ description: Simply communicate
 logo-url: https://uibai.s3.eu-central-1.amazonaws.com/uib.png
 info-url: https://uib.ai/
 documentation-url: https://uib.ai/
+tts-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/uib/
 fields:
   - id: phone_number
     name: Receiver Phone Number(s)

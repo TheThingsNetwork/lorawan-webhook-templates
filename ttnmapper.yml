@@ -4,6 +4,7 @@ description: Contribute data for coverage and signal analysis
 logo-url: https://ttnmapper.org/resources/TTNMapper.svg
 info-url: https://ttnmapper.org
 documentation-url: https://docs.ttnmapper.org/
+tts-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/ttnmapper/
 fields:
   - id: email
     name: Email address

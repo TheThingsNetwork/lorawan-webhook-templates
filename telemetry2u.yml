@@ -4,6 +4,7 @@ description: Telemetry2U IoT dashboard and alert system integration
 logo-url: https://telemetry2u.com/images/logo-telemetry2u.svg
 info-url: https://telemetry2u.com/
 documentation-url: https://telemetry2u.com/Documentation/lorawan-iot-platform-registration-help
+tts-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/telemetry2u/
 fields:
   - id: token
     name: Telemetry2U Token

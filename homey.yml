@@ -4,6 +4,7 @@ description: Integrate The Things Stack with your Homey
 info-url: https://homey.app
 logo-url: https://homey-logos.s3.eu-west-1.amazonaws.com/logos/256.png
 documentation-url: https://apps.developer.homey.app/cloud/webhooks#option-2-webhooks-using-key-path-properties
+tts-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/homey/
 fields:
   - id: homey_webhookID
     name: Homey Webhook ID

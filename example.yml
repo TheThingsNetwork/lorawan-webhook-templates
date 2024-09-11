@@ -4,6 +4,7 @@ description: A simple webhook template
 logo-url: https://upload.wikimedia.org/wikipedia/commons/3/30/Vector-based_example.svg
 info-url: https://www.example.com
 documentation-url: https://www.iana.org/domains/reserved
+tts-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/
 fields:
   - id: region
     name: Server region

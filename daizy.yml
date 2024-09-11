@@ -4,6 +4,7 @@ description: Integrate with Daizy
 logo-url: https://daizy.io/wp-content/uploads/2021/03/Daizy-Logo-Positive.png
 info-url: https://daizy.io/
 documentation-url: https://daizy.atlassian.net/servicedesk/customer/portals
+tts-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/daizy/
 fields:
   - id: organisation_slug
     name: Organisation Slug

@@ -4,6 +4,7 @@ description: Visualize, monitor and analyze data conveniently with AnyViz Cloud
 logo-url: https://cdn.anyviz.io/img/anyviz-logo.svg
 info-url: https://www.anyviz.io
 documentation-url: https://www.anyviz.io/the-things-industries/
+tts-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/anyviz/
 fields:
   - id: server_instance
     name: AnyViz instance
