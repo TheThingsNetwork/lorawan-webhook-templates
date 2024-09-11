@@ -18,7 +18,7 @@ const csvWriter = createObjectCsvWriter({
         { id: 'name', title: 'Name' },
         { id: 'description', title: 'Description' },
         { id: 'documentationUrl', title: 'Documentation URL' },
-        { id: 'TTSDocumentationUrl', title: 'TTS Documentation URL' },
+        { id: 'ttsDocumentationUrl', title: 'TTS Documentation URL' },
         { id: 'format', title: 'Format' },
     ]
 });
