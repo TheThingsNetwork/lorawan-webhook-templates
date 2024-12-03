@@ -1,19 +1,19 @@
-template-id: iotinabox
-name: IoTinaBox™
+template-id: mydevices
+name: myDevices
 description: Plug-and-Play IoT Solutions
-logo-url: https://res.cloudinary.com/dctlrnwuz/image/upload/v1619483016/mydevices/iot-logo-mydevices.png
+logo-url: https://mydevices.com/wp-content/uploads/2022/07/mydevices_logo_dark.svg
 info-url: https://mydevices.com
-documentation-url: https://mydevices.com/iotinabox/support
+documentation-url: https://help.mydevices.com
 tts-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/iotinabox/
 fields:
   - id: client_id
     name: Client ID
-    description: IoTinaBox Integration Client ID
+    description: myDevices Integration Client ID
     secret: false
     optional: false
   - id: x_api_key
     name: API Key
-    description: IoTinaBox API key used for authorization
+    description: myDevices API key used for authorization
     secret: true
     optional: false
 format: json
