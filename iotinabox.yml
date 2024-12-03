@@ -6,15 +6,20 @@ info-url: https://mydevices.com
 documentation-url: https://mydevices.com/iotinabox/support
 tts-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/iotinabox/
 fields:
-  - id: x_subscription_key
-    name: Subscription Key
-    description: Optional API key used for authorization
+  - id: client_id
+    name: Client ID
+    description: IoTinaBox Integration Client ID
     secret: false
-    optional: true
+    optional: false
+  - id: x_api_key
+    name: API Key
+    description: IoTinaBox API key used for authorization
+    secret: true
+    optional: false
 format: json
 headers:
-  x-subscription-key: "{x_subscription_key}"
+  x-apikey: "{x_api_key}"
 create-downlink-api-key: true
-base-url: https://hub.m2c.io/v1/networks/iotinabox.ttnv3
+base-url: https://hub.m2c.io/v3
 paths:
-  uplink-message: /uplink
+  uplink-message: /ingress/{client_id}
