@@ -24,3 +24,4 @@ field-mask:
   - up.uplink_message.rx_metadata
   - up.uplink_message.settings.data_rate.modulation.lora.spreading_factor
   - up.uplink_message.frm_payload
+  - up.uplink_message.f_port
