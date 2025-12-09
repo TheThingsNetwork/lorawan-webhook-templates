@@ -1,7 +1,7 @@
 template-id: tagoio
 name: TagoIO
 description: Integrate with TagoIO
-logo-url: https://partners.sigfox.com/assets/logo-for/5acccca69bffaf0001201a45
+logo-url: https://files.us-e1.tago.io/5bbcb03b667d7a002e56664b/storage/logo-tagoio.avif
 info-url: https://tago.io/
 documentation-url: https://community.tago.io/t/how-to-integrate-tagoio-with-ttn-v3/374
 tts-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/tagoio/
@@ -10,11 +10,16 @@ fields:
     name: Authorization
     description: TagoIO Authorization
     secret: true
+  - id: url
+    name: Base URL
+    description: The complete URL to TagoIO middleware. For TagoIO Cloud use either ttn.middleware.us-e1.tago.io (United States) or ttn.middleware.eu-w1.tago.io (European Union). For TagoIO Deploy users, please use your custom middleware URL.
+    default-value: ttn.middleware.us-e1.tago.io
+    optional: false
 format: json
 headers:
   Authorization: "{auth}"
   Content-Type: application/json
 create-downlink-api-key: true
-base-url: https://ttn.middleware.tago.io
+base-url: https://{url}
 paths:
   uplink-message: /uplink
