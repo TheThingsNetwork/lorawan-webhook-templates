@@ -1,0 +1,44 @@
+# Telemetry Harbor Webhook Template for The Things Network
+template-id: telemetry-harbor
+name: Telemetry Harbor
+description: One Platform. Infinite Insights.
+logo-url: https://raw.githubusercontent.com/TelemetryHarbor/harbor-images/426bb512aaf0bf9ab9354a8f911a907c59b214d6/white-icon.png
+info-url: https://telemetryharbor.com
+documentation-url: https://docs.telemetryharbor.com/docs/integrations/ttn
+tts-documentation-url: https://docs.telemetryharbor.com/docs/integrations/ttn
+
+# User configuration fields
+fields:
+  - id: harbor-endpoint
+    name: Telemetry Harbor Endpoint URL
+    description: Your complete Telemetry Harbor endpoint URL (e.g., https://telemetryharbor.com/api/v2/harbor-id/ttn)
+    secret: false
+  - id: api-key
+    name: API Key
+    description: Your Telemetry Harbor API key for authentication
+    secret: true
+
+# Endpoint configuration
+format: json
+base-url: '{harbor-endpoint}'
+
+headers:
+  X-API-Key: '{api-key}'
+  Content-Type: 'application/json'
+
+# Message paths - only uplink messages are supported
+paths:
+  uplink-message: ''
+
+# Field mask - optimized for flat JSON numeric data
+field-mask:
+  - end_device_ids.device_id
+  - end_device_ids.application_ids.application_id
+  - end_device_ids.dev_eui
+  - received_at
+  - up.uplink_message.decoded_payload
+  - up.uplink_message.f_port
+  - up.uplink_message.f_cnt
+  - up.uplink_message.received_at
+  - up.uplink_message.rx_metadata
+  - up.uplink_message.settings
