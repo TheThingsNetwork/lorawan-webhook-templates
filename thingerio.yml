@@ -22,10 +22,16 @@ fields:
     description: Thinger.io TTS Plugin Authorization Header
     secret: false
     optional: false
+  - id: plugin_endpoint
+    name: Plugin Endpoint
+    description: Thinger.io TTS Plugin Endpoint Selector
+    secret: false
+    optional: false
+    default-value: ttn
 format: json
 headers:
   Authorization: "{authorization_header}"
 create-downlink-api-key: true
-base-url: https://{server_instance}/users/{user}/plugins/ttn-stack
+base-url: https://{server_instance}/users/{user}/plugins/{plugin_endpoint}
 paths:
   uplink-message: /uplink
