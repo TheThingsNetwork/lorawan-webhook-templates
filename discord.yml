@@ -1,0 +1,40 @@
+template-id: "discord-notifier"
+name: "Discord LoRaWAN Notifier"
+description: []
+logo-url: "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e3d74e9607e61eeec9c91b_Logo.svg"
+info-url: []
+documentation-url: []
+tts-documentation-url: []
+
+fields:
+- id: discord_webhook_url
+  name: Discord Webhook URL
+  description: []
+  secret: true
+  default-value: ""
+
+format: "json"
+base-url: "{{discord_webhook_url}}"
+
+headers:
+  Content-Type: "application/json"
+
+paths:
+  uplink-message: ""
+
+body: >
+  {
+    "content": "**LoRaWAN Uplink Received**\n
+    **Device:** {{ end_device_ids.device_id }}\n
+    **Application:** {{ end_device_ids.application_ids.application_id }}\n
+    **Received at:** {{ received_at }}\n
+    {
+      "embeds": [
+        {
+          "title": "Decoded Payload",
+          "description": "{{ uplink_message.decoded_payload | toJsonPretty }}",
+          "color": 5814783
+        }
+      ]
+    }
+  }
