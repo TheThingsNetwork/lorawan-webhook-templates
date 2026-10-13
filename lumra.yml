@@ -3,7 +3,7 @@ name: Lumra
 description: Seal each uplink into a tamper-evident, independently verifiable record of what your devices reported
 logo-url: https://raw.githubusercontent.com/PriviNet1/lorawan-webhook-templates/1229c8cb370435e6441a061d54cd975ce3b00bd1/assets/lumra-square.svg
 info-url: https://privinet.net/
-documentation-url: https://privinet.net/api.html
+documentation-url: https://privinet.net/ttn.html
 tts-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/
 fields:
   - id: api_key
