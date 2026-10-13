@@ -1,0 +1,20 @@
+template-id: lumra
+name: Lumra
+description: Seal each uplink into a tamper-evident, independently verifiable record of what your devices reported
+logo-url: https://raw.githubusercontent.com/PriviNet1/lorawan-webhook-templates/1229c8cb370435e6441a061d54cd975ce3b00bd1/assets/lumra-square.svg
+info-url: https://privinet.net/
+documentation-url: https://privinet.net/ttn.html
+tts-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/
+fields:
+  - id: api_key
+    name: Lumra API key
+    description: Lumra API key issued for your pilot or tenant
+    secret: true
+format: json
+headers:
+  Authorization: Bearer {api_key}
+create-downlink-api-key: false
+base-url: https://api.privinet.net
+paths:
+  uplink-message: /v1/ingest/raw
+
