@@ -1,0 +1,22 @@
+title: StilSein Industrial
+description: Autonomous water and agricultural monitoring system for African farms.
+logo_url: https://stilsein.co.za/assets/images/app_icon.png
+info_url: https://stilsein.co.za
+documentation_url: https://stilsein.co.za/ttn_gids.html
+
+base_url: https://api.stilsein.co.za
+
+headers:
+  - name: X-StilSein-Auth
+    value: '{{api_key}}'
+
+fields:
+  - id: api_key
+    name: StilSein Security Token
+    description: Enter your StilSein secret token (provided by HQ).
+    type: secret
+    required: true
+
+messages:
+  - type: uplink
+    path: /
