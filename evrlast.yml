@@ -1,0 +1,33 @@
+template-id: evrlast
+name: evrlast
+description: Integrate with evrlast
+logo-url: https://www.tagback.de/wp-content/uploads/2025/06/logo_evrlast.png
+info-url: https://www.tagback.de/evrlast
+documentation-url: https://docs.evrlast.com/
+tts-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/evrlast/
+fields:
+  - id: basic_auth
+    name: API credentials
+    description: Base64 encoded API key and API password in the format key:password
+    secret: true
+format: json
+headers:
+  Authorization: Basic {basic_auth}
+base-url: https://datareceiver.cloud.evrlast.com
+paths:
+  uplink-message: /uplink
+  join-accept: /join/accept
+field-mask:
+  - end_device_ids.device_id
+  - end_device_ids.dev_eui
+  - end_device_ids.application_ids.application_id
+  - end_device_ids.join_eui
+  - uplink_message.decoded_payload
+  - uplink_message.rx_metadata
+  - uplink_message.f_port
+  - uplink_message.frm_payload
+  - uplink_message.settings.data_rate
+  - uplink_message.settings.frequency
+  - uplink_message.settings.data_rate.modulation.lora.spreading_factor
+  - uplink_message.settings.data_rate.modulation.lora.bandwidth
+  - received_at
