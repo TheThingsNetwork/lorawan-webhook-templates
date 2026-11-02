@@ -1,0 +1,23 @@
+template-id: nuasense
+name: NuaSense
+description: Send uplinks to NuaSense and get the agronomy computed on the station — frost nights, spray windows, ET0, leaf wetness — and a check of the sensor against the model
+logo-url: https://raw.githubusercontent.com/nuasense/homeassistant-nuasense/main/brand/icon.png
+info-url: https://nuasense.com
+documentation-url: https://github.com/nuasense/station-schema#ways-in
+tts-documentation-url: https://www.thethingsindustries.com/docs/integrations/cloud-integrations/
+fields:
+  - id: token
+    name: Station token
+    description: The part after /station/ in the path NuaSense shows for the station (External stations → Add a station), for example kw7n-4hpd-x2vt
+    secret: true
+format: json
+create-downlink-api-key: false
+base-url: https://api.nuasense.com/lorawan/{token}
+paths:
+  uplink-message: /
+field-mask:
+  - end_device_ids.dev_eui
+  - end_device_ids.device_id
+  - received_at
+  - up.uplink_message.received_at
+  - up.uplink_message.decoded_payload
