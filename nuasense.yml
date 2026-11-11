@@ -21,3 +21,4 @@ field-mask:
   - received_at
   - up.uplink_message.received_at
   - up.uplink_message.decoded_payload
+  - up.uplink_message.normalized_payload
