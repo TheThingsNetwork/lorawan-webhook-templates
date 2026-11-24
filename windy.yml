@@ -1,0 +1,23 @@
+template-id: windy
+name: Windy
+description: Send weather station data to Windy.com
+logo-url: https://stations.windy.com/favicon.png
+info-url: https://stations.windy.com/
+documentation-url: https://stations.windy.com/docs/guides/The%20Things%20Network
+tts-documentation-url: https://stations.windy.com/docs/guides/The%20Things%20Network
+fields:
+  - id: station_id
+    name: Station ID
+    description: Station ID from My Stations on stations.windy.com
+    secret: false
+  - id: password
+    name: Station password
+    description: Station Password from My Stations on stations.windy.com
+    secret: true
+format: json
+headers:
+  Authorization: Bearer {password}
+create-downlink-api-key: false
+base-url: https://stations.windy.com/api/v2/integrations/ttn{/station_id}
+paths:
+  uplink-message: /
