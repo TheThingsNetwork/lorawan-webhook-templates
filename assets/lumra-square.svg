@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Lumra</title>
+  <desc id="desc">Lumra integration mark</desc>
+  <rect width="512" height="512" rx="88" fill="#1C3A5B"/>
+  <path d="M156 126v260h206" fill="none" stroke="#FFFFFF" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="156" cy="126" r="22" fill="#A63A2B"/>
+  <circle cx="156" cy="386" r="22" fill="#A63A2B"/>
+  <circle cx="362" cy="386" r="22" fill="#A63A2B"/>
+</svg>
